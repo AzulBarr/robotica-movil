@@ -1,0 +1,89 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found robmovil_msgs: 0.0.0 (/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/ros2_ws/src/robotica/build/lazo_abierto
+[ 14%] [32mBuilding CXX object CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   51 |     std::vector<double> spline_waypoints_data = [01;35m[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})[m[K;
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[ 42%] [32m[1mLinking CXX executable trajectory_generator[0m
+[ 42%] Built target trajectory_generator
+[ 57%] [32m[1mLinking CXX static library libtrajectory_controller.a[0m
+[ 57%] Built target trajectory_controller
+[ 71%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower_node.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/FeedForwardController.cpp.o[0m
+[100%] [32m[1mLinking CXX executable trajectory_follower[0m
+[100%] Built target trajectory_follower
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/libtrajectory_controller.a
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/FeedForwardController.h
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch/lazo_abierto.launch.py
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/package_run_dependencies/lazo_abierto
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/parent_prefix_path/lazo_abierto
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.bash
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.sh
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.zsh
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/packages/lazo_abierto
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport-noconfig.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig-version.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.xml

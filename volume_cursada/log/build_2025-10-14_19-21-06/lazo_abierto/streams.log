@@ -1,0 +1,95 @@
+[0.031s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/lazo_abierto -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/lazo_abierto
+[0.175s] -- The C compiler identification is GNU 11.4.0
+[0.318s] -- The CXX compiler identification is GNU 11.4.0
+[0.335s] -- Detecting C compiler ABI info
+[0.502s] -- Detecting C compiler ABI info - done
+[0.519s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.519s] -- Detecting C compile features
+[0.520s] -- Detecting C compile features - done
+[0.527s] -- Detecting CXX compiler ABI info
+[0.704s] -- Detecting CXX compiler ABI info - done
+[0.721s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.721s] -- Detecting CXX compile features
+[0.723s] -- Detecting CXX compile features - done
+[0.730s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.113s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.528s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.545s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.571s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.607s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.655s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.790s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.800s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.027s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.100s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.203s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.233s] -- Looking for pthread.h
+[2.359s] -- Looking for pthread.h - found
+[2.360s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.490s] -- Found Threads: TRUE  
+[2.589s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.611s] -- Found robmovil_msgs: 0.0.0 (/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake)
+[2.640s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.671s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.694s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.729s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.732s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.732s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.004s] -- Configuring done
+[3.035s] -- Generating done
+[3.045s] -- Build files have been written to: /root/ros2_ws/src/robotica/build/lazo_abierto
+[3.058s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/src/robotica/lazo_abierto -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/lazo_abierto
+[3.060s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j22 -l22
+[3.139s] [ 14%] [32mBuilding CXX object CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o[0m
+[3.150s] [ 28%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
+[7.612s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.612s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[7.612s]    51 |     std::vector<double> spline_waypoints_data = [01;35m[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})[m[K;
+[7.612s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.612s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[11.290s] [ 42%] [32m[1mLinking CXX executable trajectory_generator[0m
+[11.717s] [ 42%] Built target trajectory_generator
+[17.660s] [ 57%] [32m[1mLinking CXX static library libtrajectory_controller.a[0m
+[17.883s] [ 57%] Built target trajectory_controller
+[17.921s] [ 71%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower_node.cpp.o[0m
+[17.924s] [ 85%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/FeedForwardController.cpp.o[0m
+[23.066s] [100%] [32m[1mLinking CXX executable trajectory_follower[0m
+[23.746s] [100%] Built target trajectory_follower
+[23.762s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j22 -l22
+[23.765s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto
+[23.777s] -- Install configuration: ""
+[23.777s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/libtrajectory_controller.a
+[23.786s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower
+[23.790s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower" to ""
+[23.790s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator
+[23.791s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator" to ""
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/FeedForwardController.h
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch/lazo_abierto.launch.py
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.sh
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.dsv
+[23.792s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/package_run_dependencies/lazo_abierto
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/parent_prefix_path/lazo_abierto
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.sh
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.dsv
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.sh
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.dsv
+[23.793s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.bash
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.sh
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.zsh
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.dsv
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/packages/lazo_abierto
+[23.794s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport.cmake
+[23.795s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport-noconfig.cmake
+[23.795s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_targets-extras.cmake
+[23.795s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.795s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.795s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig.cmake
+[23.796s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig-version.cmake
+[23.796s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.xml
+[23.800s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto

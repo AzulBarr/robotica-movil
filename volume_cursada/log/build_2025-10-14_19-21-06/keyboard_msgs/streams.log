@@ -1,0 +1,231 @@
+[0.014s] Invoking command in '/root/ros2_ws/src/robotica/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/robotica/ros2-keyboard/keyboard_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/keyboard_msgs
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.158s] -- The CXX compiler identification is GNU 11.4.0
+[0.167s] -- Detecting C compiler ABI info
+[0.257s] -- Detecting C compiler ABI info - done
+[0.265s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.265s] -- Detecting C compile features
+[0.266s] -- Detecting C compile features - done
+[0.269s] -- Detecting CXX compiler ABI info
+[0.371s] -- Detecting CXX compiler ABI info - done
+[0.382s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.382s] -- Detecting CXX compile features
+[0.382s] -- Detecting CXX compile features - done
+[0.387s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.601s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.740s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.803s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.812s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.826s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.845s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.871s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.912s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.310s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.911s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.170s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.212s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.217s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.276s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.276s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.276s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.277s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.323s] -- Found PythonExtra: .so  
+[2.431s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.490s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.492s] -- Added test 'lint_cmake' to check CMake code style
+[2.494s] -- Added test 'xmllint' to check XML markup files
+[2.499s] -- Configuring done
+[2.562s] -- Generating done
+[2.584s] -- Build files have been written to: /root/ros2_ws/src/robotica/build/keyboard_msgs
+[2.594s] Invoked command in '/root/ros2_ws/src/robotica/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/robotica/ros2-keyboard/keyboard_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/keyboard_msgs
+[2.599s] Invoking command in '/root/ros2_ws/src/robotica/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/keyboard_msgs -- -j22 -l22
+[2.684s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.705s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.725s] [  6%] Built target ament_cmake_python_copy_keyboard_msgs
+[3.413s] running egg_info
+[3.415s] creating keyboard_msgs.egg-info
+[3.415s] writing keyboard_msgs.egg-info/PKG-INFO
+[3.416s] writing dependency_links to keyboard_msgs.egg-info/dependency_links.txt
+[3.416s] writing top-level names to keyboard_msgs.egg-info/top_level.txt
+[3.417s] writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[3.422s] reading manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[3.423s] writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[3.496s] [  6%] Built target ament_cmake_python_build_keyboard_msgs_egg
+[10.251s] [  9%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o[0m
+[10.426s] [ 12%] [32m[1mLinking C shared library libkeyboard_msgs__rosidl_generator_c.so[0m
+[10.557s] [ 12%] Built target keyboard_msgs__rosidl_generator_c
+[10.590s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.592s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.593s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.767s] [ 22%] Built target keyboard_msgs__cpp
+[10.800s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.801s] [ 29%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.813s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[15.128s] [ 35%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/keyboard_msgs/msg/key__type_support.cpp.o[0m
+[15.171s] [ 38%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/keyboard_msgs/msg/detail/key__type_support.c.o[0m
+[15.197s] [ 41%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_c.so[0m
+[15.253s] [ 45%] [32m[1mLinking C shared library libkeyboard_msgs__rosidl_typesupport_introspection_c.so[0m
+[15.296s] [ 45%] Built target keyboard_msgs__rosidl_typesupport_c
+[15.328s] [ 45%] Built target keyboard_msgs__rosidl_typesupport_introspection_c
+[15.443s] [ 48%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/keyboard_msgs/msg/detail/key__type_support_c.cpp.o[0m
+[15.462s] [ 51%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/keyboard_msgs/msg/detail/key__type_support.cpp.o[0m
+[15.614s] [ 54%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/keyboard_msgs/msg/detail/dds_fastrtps/key__type_support.cpp.o[0m
+[16.131s] [ 58%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/keyboard_msgs/msg/key__type_support.cpp.o[0m
+[16.147s] [ 61%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[16.196s] [ 64%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.309s] [ 64%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c
+[16.330s] [ 64%] Built target keyboard_msgs__rosidl_typesupport_introspection_cpp
+[16.446s] [ 67%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.604s] [ 67%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_cpp
+[16.659s] [ 70%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_cpp.so[0m
+[16.738s] [ 70%] Built target keyboard_msgs__rosidl_typesupport_cpp
+[16.774s] [ 70%] Built target keyboard_msgs
+[16.814s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[22.787s] [ 74%] Built target keyboard_msgs__py
+[22.829s] [ 77%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/keyboard_msgs/msg/_key_s.c.o[0m
+[22.985s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so[0m
+[23.052s] [ 80%] Built target keyboard_msgs__rosidl_generator_py
+[23.086s] [ 83%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[23.091s] [ 87%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[23.093s] [ 90%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[23.234s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.236s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.241s] [100%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.294s] [100%] Built target keyboard_msgs__rosidl_typesupport_c__pyext
+[23.303s] [100%] Built target keyboard_msgs__rosidl_typesupport_introspection_c__pyext
+[23.314s] [100%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext
+[23.333s] Invoked command in '/root/ros2_ws/src/robotica/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/keyboard_msgs -- -j22 -l22
+[23.337s] Invoking command in '/root/ros2_ws/src/robotica/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/keyboard_msgs
+[23.352s] -- Install configuration: ""
+[23.352s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/ament_index/resource_index/rosidl_interfaces/keyboard_msgs
+[23.353s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.353s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.353s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.h
+[23.353s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.353s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.h
+[23.354s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.h
+[23.354s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.c
+[23.354s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.h
+[23.354s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_c__visibility_control.h
+[23.354s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.sh
+[23.355s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.dsv
+[23.355s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so
+[23.355s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so" to ""
+[23.355s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.356s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.356s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.356s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_c.h
+[23.356s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[23.356s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so
+[23.357s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[23.357s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.357s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.357s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.357s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.hpp
+[23.358s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__builder.hpp
+[23.358s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__traits.hpp
+[23.358s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp
+[23.358s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp
+[23.358s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[23.359s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.359s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.359s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.359s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_cpp.hpp
+[23.359s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/dds_fastrtps
+[23.359s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[23.360s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+[23.360s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[23.360s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.360s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.361s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.361s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.c
+[23.361s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_c.h
+[23.361s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[23.362s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so
+[23.362s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so" to ""
+[23.362s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so
+[23.362s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so" to ""
+[23.363s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[23.363s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[23.363s] -- Up-to-date: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[23.363s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_cpp.hpp
+[23.363s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.cpp
+[23.364s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so
+[23.364s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[23.364s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so
+[23.364s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so" to ""
+[23.364s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.sh
+[23.364s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.dsv
+[23.365s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-1.0.0-py3.10.egg-info
+[23.365s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[23.365s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[23.365s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.366s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py
+[23.367s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key_s.c
+[23.368s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[23.368s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c
+[23.435s] Listing '/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs'...
+[23.436s] Compiling '/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py'...
+[23.436s] Listing '/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg'...
+[23.436s] Compiling '/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py'...
+[23.436s] Compiling '/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py'...
+[23.443s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.443s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[23.444s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.444s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[23.444s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.444s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[23.444s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so
+[23.445s] -- Set runtime path of "/root/ros2_ws/src/robotica/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so" to ""
+[23.445s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/msg/Key.idl
+[23.445s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/msg/Key.msg
+[23.446s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/ament_index/resource_index/package_run_dependencies/keyboard_msgs
+[23.446s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/ament_index/resource_index/parent_prefix_path/keyboard_msgs
+[23.446s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.sh
+[23.446s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.dsv
+[23.447s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/path.sh
+[23.447s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/environment/path.dsv
+[23.448s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/local_setup.bash
+[23.448s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/local_setup.sh
+[23.448s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/local_setup.zsh
+[23.448s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/local_setup.dsv
+[23.449s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/package.dsv
+[23.449s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/ament_index/resource_index/packages/keyboard_msgs
+[23.449s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport.cmake
+[23.450s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport-noconfig.cmake
+[23.450s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[23.450s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[23.451s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cppExport.cmake
+[23.451s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[23.451s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[23.451s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport.cmake
+[23.452s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[23.452s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport.cmake
+[23.452s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[23.452s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[23.452s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport-noconfig.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake-extras.cmake
+[23.453s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.454s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.454s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[23.454s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[23.454s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[23.454s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[23.455s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig.cmake
+[23.455s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig-version.cmake
+[23.455s] -- Installing: /root/ros2_ws/src/robotica/install/keyboard_msgs/share/keyboard_msgs/package.xml
+[23.460s] Invoked command in '/root/ros2_ws/src/robotica/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/keyboard_msgs
