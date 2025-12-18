@@ -77,6 +77,7 @@ void PioneerOdometry::on_velocity_cmd(const geometry_msgs::msg::Twist::SharedPtr
 
     vel_pub_rear_right_->publish(msg);
   }
+
 }
 
 void PioneerOdometry::on_encoder_ticks(const robmovil_msgs::msg::MultiEncoderTicks::SharedPtr encoder)

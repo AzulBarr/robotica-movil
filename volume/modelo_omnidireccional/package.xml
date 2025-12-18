@@ -5,7 +5,7 @@
   <description>Taller de introducción a ROS 2.</description>
   <license>Apache-2.0</license>
 
-  <!-- Mandatory maintainer   CAMBIAR--> 
+  <!-- Mandatory maintainer -->
   <maintainer email="fraverta@dc.uba.ar">FranciscoRaverta</maintainer>
 
   <license>TODO</license>
