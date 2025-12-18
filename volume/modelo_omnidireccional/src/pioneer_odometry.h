@@ -6,6 +6,8 @@
 #include <std_msgs/msg/float64.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <tf2_ros/transform_broadcaster.h>
+#include <robmovil_msgs/msg/multi_encoder_ticks.hpp>
+
 
 namespace robmovil
 {
@@ -25,10 +27,11 @@ class PioneerOdometry : public rclcpp::Node
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr twist_sub_;
     rclcpp::Subscription<robmovil_msgs::msg::MultiEncoderTicks>::SharedPtr encoder_sub_;
 
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_rear_right_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_front_left_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_rear_left_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_front_right_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_rear_left_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr vel_pub_rear_right_;
+
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr pub_odometry_;
 
   // Acá pueden agregar las variables de instancia que necesiten
