@@ -8,7 +8,6 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <robmovil_msgs/msg/multi_encoder_ticks.hpp>
 
-
 namespace robmovil
 {
 
