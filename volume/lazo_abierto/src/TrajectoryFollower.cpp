@@ -33,8 +33,13 @@ void TrajectoryFollower::timerCallback()
 
   // Aplicar la ley de control
 
+<<<<<<< HEAD
   double v, w;
   if( not control(t, v, w) ) {
+=======
+  double vx, vy, w;
+  if( not control(t, vx, vy, w) ) {
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
     RCLCPP_INFO(this->get_logger(), "Trajectory finished");
     timer_->cancel();
     
@@ -47,8 +52,13 @@ void TrajectoryFollower::timerCallback()
 
   geometry_msgs::msg::Twist cmd;
 
+<<<<<<< HEAD
   cmd.linear.x = v;
   cmd.linear.y = 0;
+=======
+  cmd.linear.x = vx;
+  cmd.linear.y = vy;
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
   cmd.linear.z = 0;
 
   cmd.angular.x = 0;

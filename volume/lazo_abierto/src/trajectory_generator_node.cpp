@@ -182,6 +182,7 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
     double xb = wpoints[n_point + 1][1];
     double yb = wpoints[n_point + 1][2];
     double thetab = wpoints[n_point + 1][3];
+<<<<<<< HEAD
 
     /*std::cout << "xa " << xa << " ya " << ya << " thetaa " << thetaa  << std::endl;
     std::cout << "xb " << xb << " yb " << yb << " thetab " << thetab  << std::endl;
@@ -190,10 +191,19 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
     // curvature parameters OBS: n1 creo que es vi n2 vf
     double n1 = 5;
     double n2 = 5;
+=======
+    double v_x_a = 0;
+    double v_x_b = 0;
+    double v_y_a = 1;
+    double v_y_b = 1;
+    double w_a = 0.1;
+    double w_b = 0.1;
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
 
     // polynomial parameters
 
     /* COMPLETAR LOS PARÁMETROS DE LOS POLINOMIOS */
+<<<<<<< HEAD
     double a0 = xa;
     double a1 = n1 * cos(thetaa);
     double a2 = 3 * (xb - xa) - 2 * n1 * cos(thetaa) - n2 * cos(thetab);
@@ -205,6 +215,21 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
 
     // std::cout << "a0 " << a0 << " a1 " << a1 << " a2 " << a2 << " a3 " << a3 << std::endl;
     // std::cout << "b0 " << b0 << " b1 " << b1 << " b2 " << b2 << " b3 " << b3 << std::endl;
+=======
+
+    double a0 = xa;
+    double a1 = v_x_a
+    double a2 = 3 * (xb - xa) / final_time**2 - 2 * v_x_a / final_time - v_x_b / final_time;
+    double a3 = -2 * (xb - xa) /final_time**3  + (v_x_b - v_x_a) / final_time**2;
+    double b0 = ya;
+    double b1 = v_y_a
+    double b2 = 3 * (yb - ya) / final_time**2 - 2 * v_y_a / final_time - v_y_b / final_time;
+    double b3 = -2 * (yb - ya) /final_time**3  + (v_y_b - v_y_a) / final_time**2;
+    double c0 = thetaa;
+    double c1 = w_a
+    double c2 = 3 * (thetab - thetaa) / final_time**2 - 2 * w_a / final_time - w_b / final_time;
+    double c3 = -2 * (thetab - thetaa) /final_time**3  + (w_b - w_a) / final_time**2;
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
 
     for (double t = initial_time; t <= final_time; t = t + stepping)
     {
@@ -217,7 +242,10 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
       double y = b0 + b1 * t_offset / delta_time + b2 * t_offset * t_offset / (delta_time * delta_time) + b3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
 
       std::cout << "x " << x << std::endl;
+<<<<<<< HEAD
       // std::cout << "y " << y << std::endl;
+=======
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
 
       // derivadas primeras
       double vx = a1 / delta_time + 2. * a2 * t_offset / (delta_time * delta_time) + 3. * a3 * t_offset * t_offset / (delta_time * delta_time * delta_time);
@@ -231,8 +259,17 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
       double vvy = 2. * b2 / (delta_time * delta_time) + 6. * b3 * t_offset / (delta_time * delta_time * delta_time);
 
       // calculo del angulo en cada momento y la derivada del angulo
+<<<<<<< HEAD
       double a = atan2(vy, vx);
       double va = (vvy * vx - vvx * vy) / (vx * vx + vy * vy);
+=======
+      // --- ORIENTACION (HOLONOMICA) ---
+      double a = angles::normalize_angle(
+          thetaa + (thetab - thetaa) * t_offset / delta_time);
+
+      // Velocidad angular constante
+      double va = angles::normalize_angle(thetab - thetaa) / delta_time;
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
 
       // se crean los waypoints de la trajectoria
       robmovil_msgs::msg::TrajectoryPoint point_msg;
@@ -251,11 +288,14 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
       point_msg.velocity.linear.y = vy;
       point_msg.velocity.linear.z = 0;
 
+<<<<<<< HEAD
       // std::cout << "vx" << vx << std::endl;
       // std::cout << "vy" << vy << std::endl;
       // std::cout << "step" << stepping << std::endl;
       // std::cout << "total_time" << total_time << std::endl;
 
+=======
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
       point_msg.velocity.angular.x = 0;
       point_msg.velocity.angular.y = 0;
       point_msg.velocity.angular.z = va;

@@ -5,7 +5,11 @@ def generate_launch_description():
     return LaunchDescription([
         # Use simulation time for all nodes
         Node(
+<<<<<<< HEAD
             package='modelo_diferencial',
+=======
+            package='modelo_omnidireccional',
+>>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
             executable='pioneer_odometry_node',
             name='pioneer_odometry',
             output='screen',
