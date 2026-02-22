@@ -1,8 +1,0 @@
-source;share/modelo_omnidireccional/hook/cmake_prefix_path.ps1
-source;share/modelo_omnidireccional/hook/cmake_prefix_path.dsv
-source;share/modelo_omnidireccional/hook/cmake_prefix_path.sh
-source;share/modelo_omnidireccional/local_setup.bash
-source;share/modelo_omnidireccional/local_setup.dsv
-source;share/modelo_omnidireccional/local_setup.ps1
-source;share/modelo_omnidireccional/local_setup.sh
-source;share/modelo_omnidireccional/local_setup.zsh

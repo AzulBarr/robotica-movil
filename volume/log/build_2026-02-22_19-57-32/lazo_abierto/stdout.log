@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
-[ 14%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
-[ 28%] [32mBuilding CXX object CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o[0m

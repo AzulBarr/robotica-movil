@@ -17,6 +17,7 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   // agrego
+  std::cout << "Starting trajectory generator node..." << std::endl;
   auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10))
                        .reliable()
                        .durability(RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL);
@@ -200,20 +201,20 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
 
     for (double t = initial_time; t <= final_time; t = t + stepping)
     {
-      //
+      
       double t_offset = t - initial_time;
-      std::cout << "total_time " << delta_time << std::endl;
-      std::cout << "t " << t << std::endl;
+      //std::cout << "total_time " << delta_time << std::endl;
+      //std::cout << "t " << t << std::endl;
 
       double x = a0 + a1 * t_offset / delta_time + a2 * t_offset * t_offset / (delta_time * delta_time) + a3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
       double y = b0 + b1 * t_offset / delta_time + b2 * t_offset * t_offset / (delta_time * delta_time) + b3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
 
-      std::cout << "x " << x << std::endl;
+      //std::cout << "x " << x << std::endl;
 
       double vx = a1 / delta_time + 2. * a2 * t_offset / (delta_time * delta_time) + 3. * a3 * t_offset * t_offset / (delta_time * delta_time * delta_time);
       double vy = b1 / delta_time + 2. * b2 * t_offset / (delta_time * delta_time) + 3. * b3 * t_offset * t_offset / (delta_time * delta_time * delta_time);
 
-      std::cout << "vx " << vx << std::endl;
+      //std::cout << "vx " << vx << std::endl;
 
       double vvx = 2. * a2 / (delta_time * delta_time) + 6. * a3 * t_offset / (delta_time * delta_time * delta_time);
       double vvy = 2. * b2 / (delta_time * delta_time) + 6. * b3 * t_offset / (delta_time * delta_time * delta_time);

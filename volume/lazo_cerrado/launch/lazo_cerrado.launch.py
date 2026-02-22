@@ -34,17 +34,17 @@ def generate_launch_description():
             output="screen",
             parameters=[
                 {'use_sim_time': True},
-                {'trajectory_type': 'sin'}, #sin or spline
+                {'trajectory_type': 'spline'}, #sin or spline
                 {"stepping": float(0.1)},
                 {"total_time": float(20.0)},
                 {"amplitude": float(1.0)},
                 {"cycles": float(1.0)},
                 {'spline_waypoints': [
                     0., 0., 0., 0.,
-                    10., 5., 0., 1.57,
-                    20., 5., 5., 3.14,
-                    30., 0., 5., 4.71,
-                    40., 0., 0., 0.
+                    10., 2., 0., 0.,
+                    20., 4., 0., 0.,
+                    30., 6., 0., 0.,
+                    40., 8., 0., 0.
                 ]}
             ],
         ),
@@ -57,3 +57,12 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}]
         ),
     ])
+
+'''
+0., 0., 0., 0.,
+10., 5., 0., 1.57,
+20., 5., 5., 3.14,
+30., 0., 5., 4.71,
+40., 0., 0., 0.
+NO AJUSTA LA ORIENTACION ni la posicion bien
+'''

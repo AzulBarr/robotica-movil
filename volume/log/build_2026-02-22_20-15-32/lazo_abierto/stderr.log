@@ -1,5 +1,0 @@
-[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
-   51 |     std::vector<double> spline_waypoints_data = [01;35m[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})[m[K;
-      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
