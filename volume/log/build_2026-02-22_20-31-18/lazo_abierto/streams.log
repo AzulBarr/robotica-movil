@@ -1,0 +1,39 @@
+[0.013s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/src/robotica/install/modelo_omnidireccional:/root/ros2_ws/src/robotica/install/lazo_cerrado:/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/install/lazo_cerrado:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[0.100s] [ 28%] Built target trajectory_controller
+[0.101s] [ 57%] Built target trajectory_generator
+[0.139s] [100%] Built target trajectory_follower
+[0.151s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/src/robotica/install/modelo_omnidireccional:/root/ros2_ws/src/robotica/install/lazo_cerrado:/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/install/lazo_cerrado:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[0.153s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/src/robotica/install/modelo_omnidireccional:/root/ros2_ws/src/robotica/install/lazo_cerrado:/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/install/lazo_cerrado:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto
+[0.160s] -- Install configuration: ""
+[0.160s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/libtrajectory_controller.a
+[0.160s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower
+[0.160s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator
+[0.160s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/include
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/FeedForwardController.h
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch/lazo_abierto.launch.py
+[0.161s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.sh
+[0.162s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.dsv
+[0.163s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/package_run_dependencies/lazo_abierto
+[0.163s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/parent_prefix_path/lazo_abierto
+[0.163s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.sh
+[0.164s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.dsv
+[0.164s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.sh
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.dsv
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.bash
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.sh
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.zsh
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.dsv
+[0.165s] -- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/packages/lazo_abierto
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport.cmake
+[0.165s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport-noconfig.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_targets-extras.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig-version.cmake
+[0.166s] -- Up-to-date: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.xml
+[0.166s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/src/robotica/install/modelo_omnidireccional:/root/ros2_ws/src/robotica/install/lazo_cerrado:/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/install/lazo_cerrado:/root/ros2_ws/install/lazo_abierto:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/install/lazo_abierto/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto

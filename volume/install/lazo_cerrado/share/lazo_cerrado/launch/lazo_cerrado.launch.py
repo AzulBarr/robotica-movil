@@ -20,7 +20,7 @@ def generate_launch_description():
             output="screen",
             parameters=[
                 {'use_sim_time': True},
-                {"goal_selection": "FIXED_GOAL"}, #FIXED_GOAL, PURSUIT_BASED
+                {"goal_selection": "PURSUIT_BASED"}, #FIXED_GOAL, PURSUIT_BASED
                 {"fixed_goal_x": float(2.0)},
                 {"fixed_goal_y": float(2.0)},
                 {"fixed_goal_a": float(-0.785)}, # -1/2 * PI
