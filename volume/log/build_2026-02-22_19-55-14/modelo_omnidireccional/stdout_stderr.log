@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target pioneer_odometry_node[0m
+[100%] Built target pioneer_odometry_node
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/modelo_omnidireccional/pioneer_odometry_node
+-- Set runtime path of "/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/modelo_omnidireccional/pioneer_odometry_node" to ""
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/package_run_dependencies/modelo_omnidireccional
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/parent_prefix_path/modelo_omnidireccional
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.sh
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.bash
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.sh
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.zsh
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.dsv
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/packages/modelo_omnidireccional
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig-version.cmake
+-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.xml

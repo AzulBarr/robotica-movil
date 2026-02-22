@@ -1,0 +1,4 @@
+source;share/modelo_omnidireccional/local_setup.bash
+source;share/modelo_omnidireccional/local_setup.dsv
+source;share/modelo_omnidireccional/local_setup.sh
+source;share/modelo_omnidireccional/local_setup.zsh

@@ -1,0 +1,891 @@
+[0.000000] (-) TimerEvent: {}
+[0.000330] (robmovil_msgs) JobQueued: {'identifier': 'robmovil_msgs', 'dependencies': OrderedDict()}
+[0.000379] (lazo_abierto) JobQueued: {'identifier': 'lazo_abierto', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs')])}
+[0.000411] (modelo_omnidireccional) JobQueued: {'identifier': 'modelo_omnidireccional', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs')])}
+[0.000434] (lazo_cerrado) JobQueued: {'identifier': 'lazo_cerrado', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs'), ('lazo_abierto', '/root/ros2_ws/src/robotica/install/lazo_abierto')])}
+[0.000929] (robmovil_msgs) JobStarted: {'identifier': 'robmovil_msgs'}
+[0.025535] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'cmake'}
+[0.026245] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'build'}
+[0.027567] (robmovil_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/robmovil_msgs', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/robmovil_msgs'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099663] (robmovil_msgs) StdoutLine: {'line': b'[  1%] Built target robmovil_msgs__cpp\n'}
+[0.099904] (-) TimerEvent: {}
+[0.101553] (robmovil_msgs) StdoutLine: {'line': b'[ 12%] Built target robmovil_msgs__rosidl_generator_c\n'}
+[0.109905] (robmovil_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_robmovil_msgs\n'}
+[0.144796] (robmovil_msgs) StdoutLine: {'line': b'[ 23%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.146851] (robmovil_msgs) StdoutLine: {'line': b'[ 35%] Built target robmovil_msgs__rosidl_typesupport_cpp\n'}
+[0.161696] (robmovil_msgs) StdoutLine: {'line': b'[ 46%] Built target robmovil_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.171563] (robmovil_msgs) StdoutLine: {'line': b'[ 57%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.191001] (robmovil_msgs) StdoutLine: {'line': b'[ 69%] Built target robmovil_msgs__rosidl_typesupport_c\n'}
+[0.195954] (robmovil_msgs) StdoutLine: {'line': b'[ 80%] Built target robmovil_msgs__rosidl_typesupport_introspection_c\n'}
+[0.200032] (-) TimerEvent: {}
+[0.228718] (robmovil_msgs) StdoutLine: {'line': b'[ 80%] Built target robmovil_msgs\n'}
+[0.258754] (robmovil_msgs) StdoutLine: {'line': b'[ 81%] Built target robmovil_msgs__py\n'}
+[0.290320] (robmovil_msgs) StdoutLine: {'line': b'[ 91%] Built target robmovil_msgs__rosidl_generator_py\n'}
+[0.300545] (-) TimerEvent: {}
+[0.329228] (robmovil_msgs) StdoutLine: {'line': b'[ 94%] Built target robmovil_msgs__rosidl_typesupport_c__pyext\n'}
+[0.337018] (robmovil_msgs) StdoutLine: {'line': b'[ 97%] Built target robmovil_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.337191] (robmovil_msgs) StdoutLine: {'line': b'[100%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.400676] (-) TimerEvent: {}
+[0.472202] (robmovil_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.473153] (robmovil_msgs) StdoutLine: {'line': b'writing robmovil_msgs.egg-info/PKG-INFO\n'}
+[0.473876] (robmovil_msgs) StdoutLine: {'line': b'writing dependency_links to robmovil_msgs.egg-info/dependency_links.txt\n'}
+[0.474010] (robmovil_msgs) StdoutLine: {'line': b'writing top-level names to robmovil_msgs.egg-info/top_level.txt\n'}
+[0.476255] (robmovil_msgs) StdoutLine: {'line': b"reading manifest file 'robmovil_msgs.egg-info/SOURCES.txt'\n"}
+[0.477189] (robmovil_msgs) StdoutLine: {'line': b"writing manifest file 'robmovil_msgs.egg-info/SOURCES.txt'\n"}
+[0.500793] (-) TimerEvent: {}
+[0.512989] (robmovil_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robmovil_msgs_egg\n'}
+[0.528949] (robmovil_msgs) CommandEnded: {'returncode': 0}
+[0.530547] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'install'}
+[0.539003] (robmovil_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/robotica/build/robmovil_msgs'], 'cwd': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/robmovil_msgs'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.548228] (robmovil_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.548538] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/rosidl_interfaces/robmovil_msgs\n'}
+[0.548736] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.548828] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.548913] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.h\n'}
+[0.548996] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.549079] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.h\n'}
+[0.549166] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.h\n'}
+[0.549321] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.h\n'}
+[0.549393] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.c\n'}
+[0.549497] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.h\n'}
+[0.549565] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.h\n'}
+[0.549641] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.c\n'}
+[0.549718] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.h\n'}
+[0.549803] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.h\n'}
+[0.549880] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.c\n'}
+[0.550038] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.h\n'}
+[0.550120] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.h\n'}
+[0.550166] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.c\n'}
+[0.550211] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.h\n'}
+[0.550278] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.h\n'}
+[0.550323] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.h\n'}
+[0.550368] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.h\n'}
+[0.550422] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.c\n'}
+[0.550506] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.h\n'}
+[0.550597] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.h\n'}
+[0.550786] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.h\n'}
+[0.550892] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.h\n'}
+[0.550944] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.h\n'}
+[0.550987] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.c\n'}
+[0.551045] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.h\n'}
+[0.551131] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.h\n'}
+[0.551236] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.h\n'}
+[0.551342] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.551485] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.h\n'}
+[0.551619] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.h\n'}
+[0.551741] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.sh\n'}
+[0.551828] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.dsv\n'}
+[0.551914] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_c.so\n'}
+[0.551998] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.552083] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.552167] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.552251] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.552335] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552419] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552522] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552588] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552655] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552722] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_c.h\n'}
+[0.552792] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.552872] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.552939] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.553007] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.553077] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.c\n'}
+[0.553161] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h\n'}
+[0.553242] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.c\n'}
+[0.553320] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_c.h\n'}
+[0.553399] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.c\n'}
+[0.553634] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_c.h\n'}
+[0.553729] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_c.h\n'}
+[0.553807] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_c.h\n'}
+[0.553878] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.c\n'}
+[0.553956] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.c\n'}
+[0.554029] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[0.554117] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.c\n'}
+[0.554188] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.554256] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.554341] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_c.so\n'}
+[0.554421] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.554548] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.554638] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.554711] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__builder.hpp\n'}
+[0.554789] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.hpp\n'}
+[0.554861] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.hpp\n'}
+[0.554906] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.hpp\n'}
+[0.554950] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.hpp\n'}
+[0.554991] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.hpp\n'}
+[0.555056] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.hpp\n'}
+[0.555124] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.hpp\n'}
+[0.555214] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__traits.hpp\n'}
+[0.555334] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.hpp\n'}
+[0.555488] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__traits.hpp\n'}
+[0.555648] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.hpp\n'}
+[0.555794] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.hpp\n'}
+[0.555924] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.hpp\n'}
+[0.556060] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__builder.hpp\n'}
+[0.556212] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__traits.hpp\n'}
+[0.556335] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__builder.hpp\n'}
+[0.558501] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__traits.hpp\n'}
+[0.558704] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__builder.hpp\n'}
+[0.558841] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__traits.hpp\n'}
+[0.558969] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__builder.hpp\n'}
+[0.559041] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__builder.hpp\n'}
+[0.559115] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__traits.hpp\n'}
+[0.559177] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.hpp\n'}
+[0.559244] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.hpp\n'}
+[0.559309] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.hpp\n'}
+[0.559372] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.hpp\n'}
+[0.559430] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.hpp\n'}
+[0.559521] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.hpp\n'}
+[0.559585] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.hpp\n'}
+[0.559651] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.559714] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.559776] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.559836] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.559897] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.559959] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.560020] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.560080] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/dds_fastrtps\n'}
+[0.560140] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.560202] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.560263] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.560322] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.560394] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.560480] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.560552] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.560614] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.560672] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560737] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560802] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.cpp\n'}
+[0.560872] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560949] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.561050] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.561150] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.cpp\n'}
+[0.561247] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.561351] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp\n'}
+[0.561458] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.cpp\n'}
+[0.561565] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp\n'}
+[0.561671] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp\n'}
+[0.561765] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.561860] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_cpp.so\n'}
+[0.561954] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.sh\n'}
+[0.562037] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.dsv\n'}
+[0.562127] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info\n'}
+[0.562218] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.562306] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.562413] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.562539] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.562633] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs\n'}
+[0.562715] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.562791] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.562875] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.562983] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg\n'}
+[0.563072] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks_s.c\n'}
+[0.563148] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks.py\n'}
+[0.563244] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark.py\n'}
+[0.563333] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks_s.c\n'}
+[0.563429] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array.py\n'}
+[0.563550] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_s.c\n'}
+[0.563638] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory.py\n'}
+[0.563727] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point_s.c\n'}
+[0.563812] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array_s.c\n'}
+[0.563899] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_s.c\n'}
+[0.563990] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point.py\n'}
+[0.564081] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks.py\n'}
+[0.564174] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/__init__.py\n'}
+[0.564275] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.564371] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.564466] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/librobmovil_msgs__rosidl_generator_py.so\n'}
+[0.564543] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/__init__.py\n'}
+[0.564605] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.600895] (-) TimerEvent: {}
+[0.602946] (robmovil_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs'...\n"}
+[0.603216] (robmovil_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg'...\n"}
+[0.608562] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.608787] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.611610] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.611735] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_py.so\n'}
+[0.611818] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.idl\n'}
+[0.611894] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.idl\n'}
+[0.611970] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.idl\n'}
+[0.612044] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.idl\n'}
+[0.612131] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.idl\n'}
+[0.612206] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.idl\n'}
+[0.612289] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.msg\n'}
+[0.612364] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.msg\n'}
+[0.612432] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.msg\n'}
+[0.612528] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.msg\n'}
+[0.612602] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.msg\n'}
+[0.612677] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.msg\n'}
+[0.612758] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/package_run_dependencies/robmovil_msgs\n'}
+[0.612833] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/parent_prefix_path/robmovil_msgs\n'}
+[0.612906] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.sh\n'}
+[0.612979] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.dsv\n'}
+[0.613054] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.sh\n'}
+[0.613128] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.dsv\n'}
+[0.613203] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.bash\n'}
+[0.613286] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.sh\n'}
+[0.613361] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.zsh\n'}
+[0.613435] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.dsv\n'}
+[0.613521] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv\n'}
+[0.613591] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/packages/robmovil_msgs\n'}
+[0.613662] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport.cmake\n'}
+[0.613738] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.613812] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.613884] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.614084] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.614167] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.614243] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.614326] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.614400] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.614501] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.614581] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.614657] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.614732] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.614817] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.614892] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.614963] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.615037] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.615110] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.615184] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.615259] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.615340] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.615412] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.615514] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.615601] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.615703] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig.cmake\n'}
+[0.615804] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig-version.cmake\n'}
+[0.615901] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.xml\n'}
+[0.617115] (robmovil_msgs) CommandEnded: {'returncode': 0}
+[0.643534] (robmovil_msgs) JobEnded: {'identifier': 'robmovil_msgs', 'rc': 0}
+[0.644025] (lazo_abierto) JobStarted: {'identifier': 'lazo_abierto'}
+[0.648793] (modelo_omnidireccional) JobStarted: {'identifier': 'modelo_omnidireccional'}
+[0.654747] (lazo_abierto) JobProgress: {'identifier': 'lazo_abierto', 'progress': 'cmake'}
+[0.655433] (lazo_abierto) JobProgress: {'identifier': 'lazo_abierto', 'progress': 'build'}
+[0.655804] (lazo_abierto) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/lazo_abierto', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/lazo_abierto', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/lazo_abierto'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.662104] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'cmake'}
+[0.662638] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'build'}
+[0.662947] (modelo_omnidireccional) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.703621] (-) TimerEvent: {}
+[0.725673] (lazo_abierto) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trajectory_controller\x1b[0m\n'}
+[0.739642] (lazo_abierto) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trajectory_generator\x1b[0m\n'}
+[0.752096] (modelo_omnidireccional) StdoutLine: {'line': b'[100%] Built target pioneer_odometry_node\n'}
+[0.753230] (lazo_abierto) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o\x1b[0m\n'}
+[0.767325] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[0.767702] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:1:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K#\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[0.767785] (lazo_abierto) StderrLine: {'line': b'    1 | a\x1b[01;31m\x1b[K#\x1b[m\x1b[Kinclude <rclcpp/rclcpp.hpp>\n'}
+[0.767854] (lazo_abierto) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.770056] (modelo_omnidireccional) CommandEnded: {'returncode': 0}
+[0.772887] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'install'}
+[0.772956] (modelo_omnidireccional) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'], 'cwd': '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.780130] (modelo_omnidireccional) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.781263] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/modelo_omnidireccional/pioneer_odometry_node\n'}
+[0.782534] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/package_run_dependencies/modelo_omnidireccional\n'}
+[0.782782] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/parent_prefix_path/modelo_omnidireccional\n'}
+[0.782865] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.sh\n'}
+[0.782939] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.dsv\n'}
+[0.783930] (lazo_abierto) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o\x1b[0m\n'}
+[0.784257] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.sh\n'}
+[0.784521] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.dsv\n'}
+[0.784755] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.bash\n'}
+[0.784984] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.sh\n'}
+[0.785209] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.zsh\n'}
+[0.785512] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.dsv\n'}
+[0.785653] (modelo_omnidireccional) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.dsv\n'}
+[0.785794] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/packages/modelo_omnidireccional\n'}
+[0.785871] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig.cmake\n'}
+[0.785939] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig-version.cmake\n'}
+[0.786013] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.xml\n'}
+[0.789573] (modelo_omnidireccional) CommandEnded: {'returncode': 0}
+[0.803729] (-) TimerEvent: {}
+[0.806404] (modelo_omnidireccional) JobEnded: {'identifier': 'modelo_omnidireccional', 'rc': 0}
+[0.903875] (-) TimerEvent: {}
+[0.935434] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[0.935692] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:1:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ka\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.935790] (lazo_abierto) StderrLine: {'line': b'    1 | \x1b[01;31m\x1b[Ka\x1b[m\x1b[K#include <rclcpp/rclcpp.hpp>\n'}
+[0.935875] (lazo_abierto) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.936833] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[0.937009] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[0.937097] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[0.937173] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[0.937250] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[0.937387] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[0.937498] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[0.937564] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[0.937622] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:227:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.937686] (lazo_abierto) StderrLine: {'line': b'  227 |   template <typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K = sizeof(_Tp)>\n'}
+[0.937749] (lazo_abierto) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.937812] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:431:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.937875] (lazo_abierto) StderrLine: {'line': b'  431 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[0.937937] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.959821] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:432:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.960048] (lazo_abierto) StderrLine: {'line': b'  432 |     struct is_array<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[0.960132] (lazo_abierto) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.960207] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:432:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.960294] (lazo_abierto) StderrLine: {'line': b'  432 |     struct is_array<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.960366] (lazo_abierto) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.960460] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:537:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knullptr_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.960682] (lazo_abierto) StderrLine: {'line': b'  537 |     struct __is_null_pointer_helper<std::\x1b[01;31m\x1b[Knullptr_t\x1b[m\x1b[K>\n'}
+[0.960788] (lazo_abierto) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[0.960861] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:537:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.960933] (lazo_abierto) StderrLine: {'line': b'  537 |     struct __is_null_pointer_helper<std::nullptr_t\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.961003] (lazo_abierto) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.961067] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1361:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.961138] (lazo_abierto) StderrLine: {'line': b' 1361 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, alignof(_Tp)>\n'}
+[0.961218] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.961288] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1361:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.961358] (lazo_abierto) StderrLine: {'line': b' 1361 |     : public integral_constant<std::size_t, alignof(_Tp)\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.961425] (lazo_abierto) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.961515] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1361:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.961600] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1370:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.961692] (lazo_abierto) StderrLine: {'line': b' 1370 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 0> { };\n'}
+[0.961764] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.961834] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1370:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.961901] (lazo_abierto) StderrLine: {'line': b' 1370 |     : public integral_constant<std::size_t, 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[0.961976] (lazo_abierto) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.962052] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1370:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.962130] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1372:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.962225] (lazo_abierto) StderrLine: {'line': b' 1372 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[0.962312] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.962383] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1373:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.962477] (lazo_abierto) StderrLine: {'line': b' 1373 |     struct rank<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[0.962552] (lazo_abierto) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.962629] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1373:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.962720] (lazo_abierto) StderrLine: {'line': b' 1373 |     struct rank<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.962801] (lazo_abierto) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.962878] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1374:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.962964] (lazo_abierto) StderrLine: {'line': b' 1374 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 1 + rank<_Tp>::value> { };\n'}
+[0.963048] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.963125] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1374:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.963285] (lazo_abierto) StderrLine: {'line': b' 1374 | public integral_constant<std::size_t, 1 + rank<_Tp>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[0.963371] (lazo_abierto) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.966399] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.968077] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1374:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.968316] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1378:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.968518] (lazo_abierto) StderrLine: {'line': b' 1378 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 1 + rank<_Tp>::value> { };\n'}
+[0.968690] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.968761] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1378:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.968822] (lazo_abierto) StderrLine: {'line': b' 1378 | public integral_constant<std::size_t, 1 + rank<_Tp>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[0.968891] (lazo_abierto) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.968949] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.969005] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1378:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.969063] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1383:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.969121] (lazo_abierto) StderrLine: {'line': b' 1383 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 0> { };\n'}
+[0.969195] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.969254] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1383:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.969311] (lazo_abierto) StderrLine: {'line': b' 1383 |     : public integral_constant<std::size_t, 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[0.969366] (lazo_abierto) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.969422] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1383:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.969502] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1385:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.969562] (lazo_abierto) StderrLine: {'line': b' 1385 |   template<typename _Tp, unsigned _Uint, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[0.969624] (lazo_abierto) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.969684] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1386:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.969743] (lazo_abierto) StderrLine: {'line': b' 1386 |     struct extent<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K], _Uint>\n'}
+[0.969801] (lazo_abierto) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.969861] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1386:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.969932] (lazo_abierto) StderrLine: {'line': b' 1386 |     struct extent<_Tp[_Size], _Uint\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.969991] (lazo_abierto) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.970048] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1387:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.970108] (lazo_abierto) StderrLine: {'line': b' 1387 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K,\n'}
+[0.970178] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.970253] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1388:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.970317] (lazo_abierto) StderrLine: {'line': b' 1388 |                                _Uint == 0 ? \x1b[01;31m\x1b[K_Size\x1b[m\x1b[K : extent<_Tp,\n'}
+[0.970377] (lazo_abierto) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.972388] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1389:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.972927] (lazo_abierto) StderrLine: {'line': b' 1389 |                                               _Uint - 1>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.973038] (lazo_abierto) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.973116] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.973195] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1389:77:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.973291] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1394:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.973387] (lazo_abierto) StderrLine: {'line': b' 1394 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K,\n'}
+[0.973501] (lazo_abierto) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.973586] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1396:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.973673] (lazo_abierto) StderrLine: {'line': b' 1396 |                                               _Uint - 1>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.973751] (lazo_abierto) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.973836] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.973918] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1396:73:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[0.974003] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1759:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.974112] (lazo_abierto) StderrLine: {'line': b' 1759 |       { static constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __size = sizeof(_Tp); };\n'}
+[0.974201] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.974274] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[0.974361] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[0.974502] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[0.974601] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[0.974691] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[0.974774] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[0.974846] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[0.974916] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[0.974985] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.975063] (lazo_abierto) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[0.975135] (lazo_abierto) StderrLine: {'line': b'    1 | // C++11 <type_traits> -*- C++ -*-\n'}
+[0.975206] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[0.975282] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[0.975367] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[0.978953] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[0.979198] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[0.979284] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[0.979356] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[0.979425] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[0.979509] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1761:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.979573] (lazo_abierto) StderrLine: {'line': b' 1761 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Tp, bool = (_Sz <= _Tp::__size)>\n'}
+[0.979636] (lazo_abierto) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.979706] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1761:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.979773] (lazo_abierto) StderrLine: {'line': b' 1761 |     template<size_t _Sz, typename _Tp, bool = (\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K <= _Tp::__size)>\n'}
+[0.979838] (lazo_abierto) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.979900] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1762:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno default argument for \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.979976] (lazo_abierto) StderrLine: {'line': b' 1762 |       struct \x1b[01;31m\x1b[K__select\x1b[m\x1b[K;\n'}
+[0.980047] (lazo_abierto) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.980118] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1764:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.980186] (lazo_abierto) StderrLine: {'line': b' 1764 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Uint, typename... _UInts>\n'}
+[0.980255] (lazo_abierto) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.980326] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1765:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.980394] (lazo_abierto) StderrLine: {'line': b' 1765 |       struct __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_Uint, _UInts...>, true>\n'}
+[0.980482] (lazo_abierto) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.980552] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1765:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.980633] (lazo_abierto) StderrLine: {'line': b' 1765 |       struct __select<_Sz, _List<_Uint, _UInts...>, true\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.980705] (lazo_abierto) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.980780] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1768:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.980855] (lazo_abierto) StderrLine: {'line': b' 1768 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Uint, typename... _UInts>\n'}
+[0.980934] (lazo_abierto) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.981003] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1769:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.981074] (lazo_abierto) StderrLine: {'line': b' 1769 |       struct __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_Uint, _UInts...>, false>\n'}
+[0.981145] (lazo_abierto) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.981223] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1769:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.981299] (lazo_abierto) StderrLine: {'line': b' 1769 |       struct __select<_Sz, _List<_Uint, _UInts...>, false\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.981372] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.983394] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1770:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.983706] (lazo_abierto) StderrLine: {'line': b' 1770 |       : __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_UInts...>>\n'}
+[0.983800] (lazo_abierto) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.983882] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1770:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.983965] (lazo_abierto) StderrLine: {'line': b' 1770 |       : __select<_Sz, _List<_UInts...\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\n'}
+[0.984042] (lazo_abierto) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.984113] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1761:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__size\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd::__make_unsigned_selector_base::_List<unsigned char, short unsigned int, unsigned int, long unsigned int, long long unsigned int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.984189] (lazo_abierto) StderrLine: {'line': b' 1761 |  template<size_t _Sz, typename _Tp, bool = (_Sz <= _Tp::\x1b[01;31m\x1b[K__size\x1b[m\x1b[K)>\n'}
+[0.984263] (lazo_abierto) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.984338] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.984408] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1783:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[0.984502] (lazo_abierto) StderrLine: {'line': b' 1783 | _unsigned_type = typename __select<sizeof(_Tp), _UInts\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type;\n'}
+[0.984576] (lazo_abierto) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.984665] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.984747] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1787:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__unsigned_type\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.984828] (lazo_abierto) StderrLine: {'line': b' 1787 |         = typename __match_cv_qualifiers<_Tp, \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K>::__type;\n'}
+[0.984908] (lazo_abierto) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.984987] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1787:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[0.985072] (lazo_abierto) StderrLine: {'line': b' 1787 |  = typename __match_cv_qualifiers<_Tp, __unsigned_type\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type;\n'}
+[0.985148] (lazo_abierto) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.985212] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.985281] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1799:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<wchar_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.985360] (lazo_abierto) StderrLine: {'line': b' 1799 | typename __make_unsigned_selector<wchar_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.985424] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.985514] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.985583] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1816:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char16_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.985673] (lazo_abierto) StderrLine: {'line': b' 1816 | ypename __make_unsigned_selector<char16_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.985753] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.985831] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.985911] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1823:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char32_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.985992] (lazo_abierto) StderrLine: {'line': b' 1823 | ypename __make_unsigned_selector<char32_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.986069] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.986145] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.986220] (lazo_abierto) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<wchar_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.986294] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1912:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<wchar_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.986367] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1927:57:\x1b[m\x1b[K   required from here\n'}
+[0.986441] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1744:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<wchar_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.988063] (lazo_abierto) StderrLine: {'line': b' 1744 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[0.988142] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.988231] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1748:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<wchar_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.988315] (lazo_abierto) StderrLine: {'line': b' 1748 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[0.988400] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.988506] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1927:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[0.988587] (lazo_abierto) StderrLine: {'line': b' 1927 | = typename __make_signed_selector<wchar_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.988670] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.988765] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.988857] (lazo_abierto) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char16_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.988937] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1912:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<char16_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.989015] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1944:58:\x1b[m\x1b[K   required from here\n'}
+[0.989095] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1744:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char16_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.989178] (lazo_abierto) StderrLine: {'line': b' 1744 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[0.989253] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.989321] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1748:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char16_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.989387] (lazo_abierto) StderrLine: {'line': b' 1748 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[0.989481] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.989561] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1944:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[0.989638] (lazo_abierto) StderrLine: {'line': b' 1944 |  typename __make_signed_selector<char16_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.989712] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.989791] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.989867] (lazo_abierto) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char32_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.989949] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1912:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<char32_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.990030] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1951:58:\x1b[m\x1b[K   required from here\n'}
+[0.990110] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1744:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char32_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.990194] (lazo_abierto) StderrLine: {'line': b' 1744 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[0.990270] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.990363] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1748:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char32_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.990479] (lazo_abierto) StderrLine: {'line': b' 1748 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[0.990672] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.990755] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1951:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[0.990840] (lazo_abierto) StderrLine: {'line': b' 1951 |  typename __make_signed_selector<char32_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[0.991003] (lazo_abierto) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.991072] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.991139] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1984:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.991206] (lazo_abierto) StderrLine: {'line': b' 1984 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[0.991272] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.991335] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1985:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.991400] (lazo_abierto) StderrLine: {'line': b' 1985 |     struct remove_extent<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[0.991487] (lazo_abierto) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.991568] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1985:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.991639] (lazo_abierto) StderrLine: {'line': b' 1985 |     struct remove_extent<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.991706] (lazo_abierto) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.991773] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1997:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.991932] (lazo_abierto) StderrLine: {'line': b' 1997 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[0.992004] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.992068] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1998:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.992132] (lazo_abierto) StderrLine: {'line': b' 1998 |     struct remove_all_extents<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[0.992198] (lazo_abierto) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.992263] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:1998:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.992327] (lazo_abierto) StderrLine: {'line': b' 1998 |     struct remove_all_extents<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[0.992391] (lazo_abierto) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.992477] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2056:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.992555] (lazo_abierto) StderrLine: {'line': b' 2056 |   template<\x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Len>\n'}
+[0.992643] (lazo_abierto) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.992708] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2061:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.992839] (lazo_abierto) StderrLine: {'line': b' 2061 |         unsigned char __data[\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K];\n'}
+[0.992910] (lazo_abierto) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.992976] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2076:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.993047] (lazo_abierto) StderrLine: {'line': b' 2076 |   template<\x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Len, std::size_t _Align =\n'}
+[0.993113] (lazo_abierto) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.993175] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2076:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.993240] (lazo_abierto) StderrLine: {'line': b' 2076 |   template<std::size_t _Len, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Align =\n'}
+[0.993308] (lazo_abierto) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.993374] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2077:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.993467] (lazo_abierto) StderrLine: {'line': b' 2077 |           __alignof__(typename __aligned_storage_msa<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K>::__type)>\n'}
+[0.993536] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.993601] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.993664] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2077:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.993740] (lazo_abierto) StderrLine: {'line': b' 2077 |       __alignof__(typename __aligned_storage_msa<_Len\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type)>\n'}
+[0.993929] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.994003] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.994081] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2082:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.994149] (lazo_abierto) StderrLine: {'line': b' 2082 |         unsigned char __data[\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K];\n'}
+[0.994215] (lazo_abierto) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.994282] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2083:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Align\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.994354] (lazo_abierto) StderrLine: {'line': b' 2083 |         struct __attribute__((__aligned__((\x1b[01;31m\x1b[K_Align\x1b[m\x1b[K)))) { } __align;\n'}
+[0.994421] (lazo_abierto) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.994511] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2090:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.994581] (lazo_abierto) StderrLine: {'line': b' 2090 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_alignment = 0;\n'}
+[0.994645] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.994728] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2090:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.994876] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2091:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.994962] (lazo_abierto) StderrLine: {'line': b' 2091 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_size = 0;\n'}
+[0.995040] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.995117] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2091:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.995198] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2097:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.995272] (lazo_abierto) StderrLine: {'line': b' 2097 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_alignment =\n'}
+[0.995341] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.995491] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2097:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.995565] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2100:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.995637] (lazo_abierto) StderrLine: {'line': b' 2100 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_size =\n'}
+[0.995702] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.995768] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2100:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.995834] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2115:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.995898] (lazo_abierto) StderrLine: {'line': b' 2115 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[0.995963] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.996029] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2122:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.996101] (lazo_abierto) StderrLine: {'line': b' 2122 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_len = _Len > __strictest::_S_size\n'}
+[0.996168] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.996292] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2122:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.996460] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2126:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.996536] (lazo_abierto) StderrLine: {'line': b' 2126 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K alignment_value = __strictest::_S_alignment;\n'}
+[0.996603] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.996670] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2126:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.996738] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2128:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_S_len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.996802] (lazo_abierto) StderrLine: {'line': b' 2128 |       typedef typename aligned_storage<\x1b[01;31m\x1b[K_S_len\x1b[m\x1b[K, alignment_value>::type type;\n'}
+[0.996871] (lazo_abierto) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.996939] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2128:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalignment_value\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kalignment_of\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.997007] (lazo_abierto) StderrLine: {'line': b' 2128 |       typedef typename aligned_storage<_S_len, \x1b[01;31m\x1b[Kalignment_value\x1b[m\x1b[K>::type type;\n'}
+[0.997074] (lazo_abierto) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.997195] (lazo_abierto) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[Kalignment_of\x1b[m\x1b[K\n'}
+[0.997269] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2128:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.997344] (lazo_abierto) StderrLine: {'line': b' 2128 | edef typename aligned_storage<_S_len, alignment_value\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type type;\n'}
+[0.997411] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.997496] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.997562] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2128:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[0.997623] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2131:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.997701] (lazo_abierto) StderrLine: {'line': b' 2131 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[0.997767] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.997834] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2132:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[0.997913] (lazo_abierto) StderrLine: {'line': b' 2132 |     const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K aligned_union<_Len, _Types...>::alignment_value;\n'}
+[0.998031] (lazo_abierto) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.998102] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2132:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.998170] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2566:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.998236] (lazo_abierto) StderrLine: {'line': b' 2566 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, size_t _Align =\n'}
+[0.998301] (lazo_abierto) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.998365] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2566:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.998433] (lazo_abierto) StderrLine: {'line': b' 2566 |   template<size_t _Len, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Align =\n'}
+[0.998517] (lazo_abierto) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.998581] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2567:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.998646] (lazo_abierto) StderrLine: {'line': b' 2567 |           __alignof__(typename __aligned_storage_msa<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K>::__type)>\n'}
+[0.998710] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.998769] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.998826] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2567:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.998884] (lazo_abierto) StderrLine: {'line': b' 2567 |       __alignof__(typename __aligned_storage_msa<_Len\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type)>\n'}
+[0.998941] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.999004] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.999064] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2568:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.999127] (lazo_abierto) StderrLine: {'line': b' 2568 |   using aligned_storage_t = typename aligned_storage<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K, _Align>::type;\n'}
+[0.999194] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.999262] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.999330] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2568:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Align\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.999395] (lazo_abierto) StderrLine: {'line': b' 2568 | g aligned_storage_t = typename aligned_storage<_Len, \x1b[01;31m\x1b[K_Align\x1b[m\x1b[K>::type;\n'}
+[0.999479] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.999550] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.999611] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2568:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.999671] (lazo_abierto) StderrLine: {'line': b' 2568 | ligned_storage_t = typename aligned_storage<_Len, _Align\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[0.999733] (lazo_abierto) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.999795] (lazo_abierto) StderrLine: {'line': b'\n'}
+[0.999853] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2568:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[0.999917] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2570:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[0.999980] (lazo_abierto) StderrLine: {'line': b' 2570 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[1.000043] (lazo_abierto) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.000186] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2571:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.000265] (lazo_abierto) StderrLine: {'line': b' 2571 |     using aligned_union_t = typename aligned_union<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K, _Types...>::type;\n'}
+[1.000335] (lazo_abierto) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.000400] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2571:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.000492] (lazo_abierto) StderrLine: {'line': b' 2571 | aligned_union_t = typename aligned_union<_Len, _Types...\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[1.000560] (lazo_abierto) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.000632] (lazo_abierto) StderrLine: {'line': b'\n'}
+[1.000697] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2680:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.000974] (lazo_abierto) StderrLine: {'line': b' 2680 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Nm>\n'}
+[1.001048] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.001114] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.001180] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[1.001247] (lazo_abierto) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.001314] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, <declaration error> > std::__enable_if_t<std::__is_swappable<_Tp>::value> std::swap\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[1.001389] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[_Nm\x1b[01;31m\x1b[K]\x1b[m\x1b[K, _Tp (&__b)[_Nm])\n'}
+[1.001475] (lazo_abierto) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.001659] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2676:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.001749] (lazo_abierto) StderrLine: {'line': b' 2676 |     \x1b[01;36m\x1b[Kswap\x1b[m\x1b[K(_Tp&, _Tp&)\n'}
+[1.001827] (lazo_abierto) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.001907] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__a\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.001987] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&\x1b[01;31m\x1b[K__a\x1b[m\x1b[K)[_Nm], _Tp (&__b)[_Nm])\n'}
+[1.002066] (lazo_abierto) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.002145] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.002224] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[1.002307] (lazo_abierto) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.002385] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__b\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.002480] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[_Nm], _Tp (&\x1b[01;31m\x1b[K__b\x1b[m\x1b[K)[_Nm])\n'}
+[1.002563] (lazo_abierto) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.002640] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.002722] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K])\n'}
+[1.002805] (lazo_abierto) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.002884] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2684:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Knoexcept\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.002959] (lazo_abierto) StderrLine: {'line': b' 2684 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])\n'}
+[1.003033] (lazo_abierto) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.003112] (lazo_abierto) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.003191] (lazo_abierto) StderrLine: {'line': b' 2685 |     \x1b[32m\x1b[Knoexcept\x1b[m\x1b[K(__is_nothrow_swappable<_Tp>::value);\n'}
+[1.003268] (lazo_abierto) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K                               \n'}
+[1.004494] (-) TimerEvent: {}
+[1.004942] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3244:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.005066] (lazo_abierto) StderrLine: {'line': b' 3244 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K alignment_of_v = alignment_of<_Tp>::value;\n'}
+[1.005152] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.005311] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3244:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.005424] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3246:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.005760] (lazo_abierto) StderrLine: {'line': b' 3246 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K rank_v = rank<_Tp>::value;\n'}
+[1.005849] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.005928] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3246:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.006007] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3248:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.006085] (lazo_abierto) StderrLine: {'line': b' 3248 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v = extent<_Tp, _Idx>::value;\n'}
+[1.006852] (lazo_abierto) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.006928] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:3248:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.007000] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[1.007065] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[1.007135] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[1.007203] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.008534] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.008617] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[1.008752] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[1.008821] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:212:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.008884] (lazo_abierto) StderrLine: {'line': b'  212 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Nm>\n'}
+[1.008947] (lazo_abierto) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.009009] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.009071] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[1.009133] (lazo_abierto) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.009201] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, <declaration error> > typename std::enable_if<std::__is_swappable<_Tp>::value, void>::type std::swap\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[1.009269] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[_Nm\x1b[01;31m\x1b[K]\x1b[m\x1b[K, _Tp (&__b)[_Nm])\n'}
+[1.009330] (lazo_abierto) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.009391] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:196:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.010530] (lazo_abierto) StderrLine: {'line': b'  196 |     \x1b[01;36m\x1b[Kswap\x1b[m\x1b[K(_Tp& __a, _Tp& __b)\n'}
+[1.010612] (lazo_abierto) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.010684] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__a\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.010752] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&\x1b[01;31m\x1b[K__a\x1b[m\x1b[K)[_Nm], _Tp (&__b)[_Nm])\n'}
+[1.010818] (lazo_abierto) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.010881] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.010955] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[1.011026] (lazo_abierto) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.012563] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__b\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.012668] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[_Nm], _Tp (&\x1b[01;31m\x1b[K__b\x1b[m\x1b[K)[_Nm])\n'}
+[1.012751] (lazo_abierto) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.012833] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.012915] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K])\n'}
+[1.012996] (lazo_abierto) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.013076] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:220:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Knoexcept\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.013158] (lazo_abierto) StderrLine: {'line': b'  220 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])\n'}
+[1.013232] (lazo_abierto) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.013309] (lazo_abierto) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.015098] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/utility:70\x1b[m\x1b[K,\n'}
+[1.015206] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[1.015276] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.015351] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.015416] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[1.015503] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[1.015563] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:92:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.015629] (lazo_abierto) StderrLine: {'line': b'   92 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K...>\n'}
+[1.015692] (lazo_abierto) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.015755] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:449:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.015815] (lazo_abierto) StderrLine: {'line': b'  449 |       template<typename... _Args1, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Indexes1,\n'}
+[1.015884] (lazo_abierto) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.015945] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:450:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.016024] (lazo_abierto) StderrLine: {'line': b'  450 |                typename... _Args2, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Indexes2>\n'}
+[1.029837] (lazo_abierto) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.029947] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Indexes1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.030014] (lazo_abierto) StderrLine: {'line': b'  453 |              _Index_tuple<\x1b[01;31m\x1b[K_Indexes1\x1b[m\x1b[K...>, _Index_tuple<_Indexes2...>);\n'}
+[1.030078] (lazo_abierto) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.030141] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.030214] (lazo_abierto) StderrLine: {'line': b'  453 |              _Index_tuple<_Indexes1\x1b[01;31m\x1b[K...\x1b[m\x1b[K>, _Index_tuple<_Indexes2...>);\n'}
+[1.030278] (lazo_abierto) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.030338] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.030401] (lazo_abierto) StderrLine: {'line': b'  453 |              _Index_tuple<_Indexes1...\x1b[01;31m\x1b[K>\x1b[m\x1b[K, _Index_tuple<_Indexes2...>);\n'}
+[1.030476] (lazo_abierto) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.030546] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Indexes2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.030611] (lazo_abierto) StderrLine: {'line': b'  453 |             _Index_tuple<_Indexes1...>, _Index_tuple<\x1b[01;31m\x1b[K_Indexes2\x1b[m\x1b[K...>);\n'}
+[1.030682] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.030746] (lazo_abierto) StderrLine: {'line': b'\n'}
+[1.030804] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.030867] (lazo_abierto) StderrLine: {'line': b'  453 |         _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2\x1b[01;31m\x1b[K...\x1b[m\x1b[K>);\n'}
+[1.030927] (lazo_abierto) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.030995] (lazo_abierto) StderrLine: {'line': b'\n'}
+[1.031057] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:453:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.031118] (lazo_abierto) StderrLine: {'line': b'  453 |         _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[1.031181] (lazo_abierto) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.031248] (lazo_abierto) StderrLine: {'line': b'\n'}
+[1.031398] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/utility:76\x1b[m\x1b[K,\n'}
+[1.031597] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[1.031662] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.031729] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.031791] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[1.031852] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[1.031915] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:53:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.031976] (lazo_abierto) StderrLine: {'line': b'   53 |       typedef \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K            size_type;\n'}
+[1.032037] (lazo_abierto) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.032106] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/utility:76\x1b[m\x1b[K,\n'}
+[1.032169] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[1.032235] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.032297] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.032358] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[1.032428] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[1.032520] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.032593] (lazo_abierto) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[1.032655] (lazo_abierto) StderrLine: {'line': b'    1 | // std::initializer_list support -*- C++ -*-\n'}
+[1.032714] (lazo_abierto) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/utility:76\x1b[m\x1b[K,\n'}
+[1.032775] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:60\x1b[m\x1b[K,\n'}
+[1.032836] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.032909] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.033039] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:2\x1b[m\x1b[K,\n'}
+[1.033166] (lazo_abierto) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1\x1b[m\x1b[K:\n'}
+[1.033317] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:59:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktrue_type\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.034376] (lazo_abierto) StderrLine: {'line': b'   59 |       \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K                 _M_len;\n'}
+[1.034518] (lazo_abierto) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.034584] (lazo_abierto) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ktrue_type\x1b[m\x1b[K\n'}
+[1.034647] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:62:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.034711] (lazo_abierto) StderrLine: {'line': b'   62 |       constexpr initializer_list(const_iterator __a, \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K __l)\n'}
+[1.034775] (lazo_abierto) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.034837] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:70:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktrue_type\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.034899] (lazo_abierto) StderrLine: {'line': b'   70 |       constexpr \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K\n'}
+[1.034960] (lazo_abierto) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.035020] (lazo_abierto) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Ktrue_type\x1b[m\x1b[K\n'}
+[1.035080] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/initializer_list:47:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kdefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass std::initializer_list<_E>\x1b[m\x1b[K\xe2\x80\x99 does not match \xe2\x80\x98\x1b[01m\x1b[K#include <initializer_list>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.035144] (lazo_abierto) StderrLine: {'line': b'   47 |     class \x1b[01;31m\x1b[Kinitializer_list\x1b[m\x1b[K\n'}
+[1.035219] (lazo_abierto) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.035284] (lazo_abierto) StderrLine: {'line': b'compilation terminated.\n'}
+[1.035401] (lazo_abierto) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_controller.dir/build.make:76: CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o] Error 1\n'}
+[1.035980] (lazo_abierto) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/trajectory_controller.dir/all] Error 2\n'}
+[1.036169] (lazo_abierto) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.104651] (-) TimerEvent: {}
+[1.207676] (-) TimerEvent: {}
+[1.308048] (-) TimerEvent: {}
+[1.408506] (-) TimerEvent: {}
+[1.509021] (-) TimerEvent: {}
+[1.609490] (-) TimerEvent: {}
+[1.709813] (-) TimerEvent: {}
+[1.810118] (-) TimerEvent: {}
+[1.910470] (-) TimerEvent: {}
+[2.010797] (-) TimerEvent: {}
+[2.111123] (-) TimerEvent: {}
+[2.211511] (-) TimerEvent: {}
+[2.311857] (-) TimerEvent: {}
+[2.412522] (-) TimerEvent: {}
+[2.512872] (-) TimerEvent: {}
+[2.613184] (-) TimerEvent: {}
+[2.713503] (-) TimerEvent: {}
+[2.813809] (-) TimerEvent: {}
+[2.914123] (-) TimerEvent: {}
+[3.014453] (-) TimerEvent: {}
+[3.114805] (-) TimerEvent: {}
+[3.215414] (-) TimerEvent: {}
+[3.315819] (-) TimerEvent: {}
+[3.416202] (-) TimerEvent: {}
+[3.516815] (-) TimerEvent: {}
+[3.527564] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.527805] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting to \xe2\x80\x98\x1b[01m\x1b[Kconst ParameterDescriptor\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} from initializer list would use explicit constructor \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.527927] (lazo_abierto) StderrLine: {'line': b'   51 |     std::vector<double> spline_waypoints_data = \x1b[01;35m\x1b[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})\x1b[m\x1b[K;\n'}
+[3.528018] (lazo_abierto) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.528100] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin C++11 and above a default constructor can be explicit\n'}
+[3.541067] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid build_spline_trajectory(double, std::vector<std::vector<double, std::allocator<double> > >&, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.541305] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:187:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.541366] (lazo_abierto) StderrLine: {'line': b'  187 |     double a2 = 3 * (xb - xa) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K - 2 * v_x_a / final_time - v_x_b / final_time;\n'}
+[3.541415] (lazo_abierto) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.541487] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:188:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.541538] (lazo_abierto) StderrLine: {'line': b'  188 |     double a3 = -2 * (xb - xa) /final_time*\x1b[01;31m\x1b[K*3\x1b[m\x1b[K  + (v_x_b - v_x_a) / final_time**2;\n'}
+[3.541596] (lazo_abierto) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.541637] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:188:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.541679] (lazo_abierto) StderrLine: {'line': b'  188 |     double a3 = -2 * (xb - xa) /final_time**3  + (v_x_b - v_x_a) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K;\n'}
+[3.541722] (lazo_abierto) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.541764] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:191:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.541805] (lazo_abierto) StderrLine: {'line': b'  191 |     double b2 = 3 * (yb - ya) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K - 2 * v_y_a / final_time - v_y_b / final_time;\n'}
+[3.541846] (lazo_abierto) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.541886] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:192:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.541925] (lazo_abierto) StderrLine: {'line': b'  192 |     double b3 = -2 * (yb - ya) /final_time*\x1b[01;31m\x1b[K*3\x1b[m\x1b[K  + (v_y_b - v_y_a) / final_time**2;\n'}
+[3.541965] (lazo_abierto) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.542004] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:192:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.542044] (lazo_abierto) StderrLine: {'line': b'  192 |     double b3 = -2 * (yb - ya) /final_time**3  + (v_y_b - v_y_a) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K;\n'}
+[3.542083] (lazo_abierto) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.542122] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:195:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.542162] (lazo_abierto) StderrLine: {'line': b'  195 |     double c2 = 3 * (thetab - thetaa) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K - 2 * w_a / final_time - w_b / final_time;\n'}
+[3.542206] (lazo_abierto) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.542279] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:196:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.542347] (lazo_abierto) StderrLine: {'line': b'  196 |     double c3 = -2 * (thetab - thetaa) /final_time*\x1b[01;31m\x1b[K*3\x1b[m\x1b[K  + (w_b - w_a) / final_time**2;\n'}
+[3.542415] (lazo_abierto) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.542517] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:196:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid type argument of unary \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 (have \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.542594] (lazo_abierto) StderrLine: {'line': b'  196 |     double c3 = -2 * (thetab - thetaa) /final_time**3  + (w_b - w_a) / final_time*\x1b[01;31m\x1b[K*2\x1b[m\x1b[K;\n'}
+[3.542672] (lazo_abierto) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.543589] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:220:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangles\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.543830] (lazo_abierto) StderrLine: {'line': b'  220 |       double a = \x1b[01;31m\x1b[Kangles\x1b[m\x1b[K::normalize_angle(\n'}
+[3.543918] (lazo_abierto) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.543999] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:223:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangles\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.544052] (lazo_abierto) StderrLine: {'line': b'  223 |       double va = \x1b[01;31m\x1b[Kangles\x1b[m\x1b[K::normalize_angle(thetab - thetaa) / delta_time;\n'}
+[3.544145] (lazo_abierto) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.616986] (-) TimerEvent: {}
+[3.717564] (-) TimerEvent: {}
+[3.818021] (-) TimerEvent: {}
+[3.918336] (-) TimerEvent: {}
+[4.018713] (-) TimerEvent: {}
+[4.119091] (-) TimerEvent: {}
+[4.219411] (-) TimerEvent: {}
+[4.319877] (-) TimerEvent: {}
+[4.420208] (-) TimerEvent: {}
+[4.520538] (-) TimerEvent: {}
+[4.559076] (lazo_abierto) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_generator.dir/build.make:76: CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o] Error 1\n'}
+[4.559810] (lazo_abierto) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/trajectory_generator.dir/all] Error 2\n'}
+[4.560004] (lazo_abierto) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.561431] (lazo_abierto) CommandEnded: {'returncode': 2}
+[4.567641] (lazo_abierto) JobEnded: {'identifier': 'lazo_abierto', 'rc': 2}
+[4.580933] (lazo_cerrado) JobSkipped: {'identifier': 'lazo_cerrado'}
+[4.580988] (-) EventReactorShutdown: {}

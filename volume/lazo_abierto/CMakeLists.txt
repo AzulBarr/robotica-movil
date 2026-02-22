@@ -17,6 +17,7 @@ find_package(robmovil_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+
 ###################################
 ## catkin specific configuration ##
 ###################################

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtrajectory_controller.a CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o
+/usr/bin/ranlib libtrajectory_controller.a

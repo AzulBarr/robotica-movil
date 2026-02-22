@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_follower_cl[0m
+[ 40%] Built target logger
+[ 60%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o[0m
+[100%] [32m[1mLinking CXX executable trajectory_follower_cl[0m

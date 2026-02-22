@@ -1,0 +1,67 @@
+In file included from [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:1[m[K:
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:21:1:[m[K [01;31m[Kerror: [m[Kversion control conflict marker in file
+   21 | [01;31m[K<<<<<<<[m[K HEAD
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:23:1:[m[K [01;31m[Kerror: [m[Kversion control conflict marker in file
+   23 | [01;31m[K=======[m[K
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h:25:1:[m[K [01;31m[Kerror: [m[Kversion control conflict marker in file
+   25 | [01;31m[K>>>>>>>[m[K b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:[m[K In member function ‘[01m[Kvoid TrajectoryFollower::timerCallback()[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/TrajectoryFollower.cpp:37:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol[m[K’ was not declared in this scope
+   37 |   if( not [01;31m[Kcontrol[m[K(t, vx, vy, w) ) {
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   51 |     std::vector<double> spline_waypoints_data = [01;35m[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})[m[K;
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kvoid build_spline_trajectory(double, std::vector<std::vector<double, std::allocator<double> > >&, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:187:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+  187 |     [01;31m[Kdouble[m[K a2 = 3 * (xb - xa) / final_time**2 - 2 * v_x_a / final_time - v_x_b / final_time;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:188:44:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  188 |     double a3 = -2 * (xb - xa) /final_time*[01;31m[K*3[m[K  + (v_x_b - v_x_a) / final_time**2;
+      |                                            [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:188:79:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  188 |     double a3 = -2 * (xb - xa) /final_time**3  + (v_x_b - v_x_a) / final_time*[01;31m[K*2[m[K;
+      |                                                                               [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:191:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+  191 |     [01;31m[Kdouble[m[K b2 = 3 * (yb - ya) / final_time**2 - 2 * v_y_a / final_time - v_y_b / final_time;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:192:44:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  192 |     double b3 = -2 * (yb - ya) /final_time*[01;31m[K*3[m[K  + (v_y_b - v_y_a) / final_time**2;
+      |                                            [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:192:79:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  192 |     double b3 = -2 * (yb - ya) /final_time**3  + (v_y_b - v_y_a) / final_time*[01;31m[K*2[m[K;
+      |                                                                               [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:195:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+  195 |     [01;31m[Kdouble[m[K c2 = 3 * (thetab - thetaa) / final_time**2 - 2 * w_a / final_time - w_b / final_time;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:196:52:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  196 |     double c3 = -2 * (thetab - thetaa) /final_time*[01;31m[K*3[m[K  + (w_b - w_a) / final_time**2;
+      |                                                    [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:196:83:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  196 |     double c3 = -2 * (thetab - thetaa) /final_time**3  + (w_b - w_a) / final_time*[01;31m[K*2[m[K;
+      |                                                                                   [01;31m[K^~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:205:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ka2[m[K’ was not declared in this scope; did you mean ‘[01m[Ka3[m[K’?
+  205 |       double x = a0 + a1 * t_offset / delta_time + [01;31m[Ka2[m[K * t_offset * t_offset / (delta_time * delta_time) + a3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
+      |                                                    [01;31m[K^~[m[K
+      |                                                    [32m[Ka3[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:206:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kb2[m[K’ was not declared in this scope; did you mean ‘[01m[Kb3[m[K’?
+  206 |       double y = b0 + b1 * t_offset / delta_time + [01;31m[Kb2[m[K * t_offset * t_offset / (delta_time * delta_time) + b3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
+      |                                                    [01;31m[K^~[m[K
+      |                                                    [32m[Kb3[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:220:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kangles[m[K’ has not been declared
+  220 |       double a = [01;31m[Kangles[m[K::normalize_angle(
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:223:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kangles[m[K’ has not been declared
+  223 |       double va = [01;31m[Kangles[m[K::normalize_angle(thetab - thetaa) / delta_time;
+      |                   [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trajectory_generator.dir/build.make:76: CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/trajectory_generator.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/trajectory_controller.dir/build.make:76: CMakeFiles/trajectory_controller.dir/src/TrajectoryFollower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/trajectory_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

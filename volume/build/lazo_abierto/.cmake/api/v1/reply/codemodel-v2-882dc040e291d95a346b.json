@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3880fb43b9b5a1c9207b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lazo_abierto",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lazo_abierto_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lazo_abierto_uninstall-374ed91227dad383a23a.json",
+					"name" : "lazo_abierto_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_controller-5302a0eaacf189878849.json",
+					"name" : "trajectory_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_follower::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_follower-c9b65254b8ac10c7102e.json",
+					"name" : "trajectory_follower",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_generator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_generator-17c620e9023986f1c901.json",
+					"name" : "trajectory_generator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-1a5c88cbbcf1e9b1e033.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/ros2_ws/src/robotica/build/lazo_abierto",
+		"source" : "/root/ros2_ws/src/robotica/lazo_abierto"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_follower_cl[0m
+[ 40%] Built target logger
+[ 60%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o[0m
+[100%] [32m[1mLinking CXX executable trajectory_follower_cl[0m
+/usr/bin/ld: CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o: in function `KinematicPositionController::getCurrentGoal(rclcpp::Time const&, double&, double&, double&)':
+KinematicPositionController.cpp:(.text._ZN27KinematicPositionController14getCurrentGoalERKN6rclcpp4TimeERdS4_S4_[_ZN27KinematicPositionController14getCurrentGoalERKN6rclcpp4TimeERdS4_S4_]+0xb4): undefined reference to `KinematicPositionController::getTimeBasedGoal(rclcpp::Time const&, double&, double&, double&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/trajectory_follower_cl.dir/build.make:232: trajectory_follower_cl] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/trajectory_follower_cl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

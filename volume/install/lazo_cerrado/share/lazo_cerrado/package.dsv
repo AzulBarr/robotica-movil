@@ -1,0 +1,8 @@
+source;share/lazo_cerrado/hook/cmake_prefix_path.ps1
+source;share/lazo_cerrado/hook/cmake_prefix_path.dsv
+source;share/lazo_cerrado/hook/cmake_prefix_path.sh
+source;share/lazo_cerrado/local_setup.bash
+source;share/lazo_cerrado/local_setup.dsv
+source;share/lazo_cerrado/local_setup.ps1
+source;share/lazo_cerrado/local_setup.sh
+source;share/lazo_cerrado/local_setup.zsh

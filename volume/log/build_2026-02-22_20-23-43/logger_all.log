@@ -1,0 +1,341 @@
+[0.112s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.112s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7cf8930f4f10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cf8931eddb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cf8931eddb0>>, mixin_verb=('build',))
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.263s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.263s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.264s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.264s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros2_ws/src/robotica'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'ros'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['cmake', 'python']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'cmake'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'python'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extensions ['python_setup_py']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(coppeliaSim) by extension 'python_setup_py'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_abierto) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'lazo_abierto' with type 'ros.ament_cmake' and name 'lazo_abierto'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(lazo_cerrado) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'lazo_cerrado' with type 'ros.ament_cmake' and name 'lazo_cerrado'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(modelo_omnidireccional) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'modelo_omnidireccional' with type 'ros.ament_cmake' and name 'modelo_omnidireccional'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(robmovil_msgs) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'robmovil_msgs' with type 'ros.ament_cmake' and name 'robmovil_msgs'
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robmovil_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'robmovil_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/robmovil_msgs', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/robmovil_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_abierto' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'lazo_abierto' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/lazo_abierto', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/lazo_abierto', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/lazo_abierto', 'symlink_install': False, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'modelo_omnidireccional' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'modelo_omnidireccional' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/modelo_omnidireccional', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/modelo_omnidireccional', 'symlink_install': False, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'lazo_cerrado' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.315s] DEBUG:colcon.colcon_core.verb:Building package 'lazo_cerrado' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/src/robotica/build/lazo_cerrado', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/src/robotica/install/lazo_cerrado', 'merge_install': False, 'path': '/root/ros2_ws/src/robotica/lazo_cerrado', 'symlink_install': False, 'test_result_base': None}
+[0.315s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.318s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/robmovil_msgs' with build type 'ament_cmake'
+[0.318s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/robmovil_msgs'
+[0.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j4 -l4
+[0.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/robmovil_msgs -- -j4 -l4
+[0.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/robmovil_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs
+[0.928s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robmovil_msgs)
+[0.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/robmovil_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/robmovil_msgs
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake module files
+[0.933s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake config files
+[0.934s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'cmake_prefix_path')
+[0.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.ps1'
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.dsv'
+[0.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.sh'
+[0.937s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib'
+[0.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'ld_library_path_lib')
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.ps1'
+[0.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.dsv'
+[0.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.sh'
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/pkgconfig/robmovil_msgs.pc'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/python3.10/site-packages'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.ps1'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.sh'
+[0.946s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.bash'
+[0.947s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.zsh'
+[0.948s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/robmovil_msgs/share/colcon-core/packages/robmovil_msgs)
+[0.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robmovil_msgs)
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake module files
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs' for CMake config files
+[0.950s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'cmake_prefix_path')
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.ps1'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.dsv'
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/cmake_prefix_path.sh'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib'
+[0.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('robmovil_msgs', 'ld_library_path_lib')
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.ps1'
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.dsv'
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/hook/ld_library_path_lib.sh'
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/pkgconfig/robmovil_msgs.pc'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib/python3.10/site-packages'
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/robmovil_msgs/bin'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.ps1'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv'
+[0.954s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.sh'
+[0.955s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.bash'
+[0.955s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.zsh'
+[0.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/robmovil_msgs/share/colcon-core/packages/robmovil_msgs)
+[0.956s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/lazo_abierto' with build type 'ament_cmake'
+[0.956s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/lazo_abierto'
+[0.957s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.957s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.962s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/modelo_omnidireccional' with build type 'ament_cmake'
+[0.963s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/modelo_omnidireccional'
+[0.963s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[0.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/modelo_omnidireccional': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/modelo_omnidireccional -- -j4 -l4
+[1.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/modelo_omnidireccional' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/modelo_omnidireccional -- -j4 -l4
+[1.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/modelo_omnidireccional': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/modelo_omnidireccional
+[1.118s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(modelo_omnidireccional)
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional' for CMake module files
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/modelo_omnidireccional' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/modelo_omnidireccional
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional' for CMake config files
+[1.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('modelo_omnidireccional', 'cmake_prefix_path')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.sh'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/bin'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/pkgconfig/modelo_omnidireccional.pc'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/python3.10/site-packages'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/bin'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.ps1'
+[1.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.dsv'
+[1.125s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.sh'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.bash'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.zsh'
+[1.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/colcon-core/packages/modelo_omnidireccional)
+[1.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(modelo_omnidireccional)
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional' for CMake module files
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional' for CMake config files
+[1.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('modelo_omnidireccional', 'cmake_prefix_path')
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.ps1'
+[1.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.dsv'
+[1.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/hook/cmake_prefix_path.sh'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/bin'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/pkgconfig/modelo_omnidireccional.pc'
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/python3.10/site-packages'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/bin'
+[1.131s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.ps1'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.sh'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.bash'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.zsh'
+[1.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/colcon-core/packages/modelo_omnidireccional)
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[1.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto
+[1.156s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lazo_abierto)
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto' for CMake module files
+[1.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_abierto
+[1.158s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto' for CMake config files
+[1.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('lazo_abierto', 'cmake_prefix_path')
+[1.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.ps1'
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.dsv'
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.sh'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/bin'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib/pkgconfig/lazo_abierto.pc'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib/python3.10/site-packages'
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/bin'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.ps1'
+[1.163s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv'
+[1.163s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.sh'
+[1.164s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.bash'
+[1.164s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.zsh'
+[1.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/lazo_abierto/share/colcon-core/packages/lazo_abierto)
+[1.165s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lazo_abierto)
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto' for CMake module files
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto' for CMake config files
+[1.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('lazo_abierto', 'cmake_prefix_path')
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.dsv'
+[1.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/hook/cmake_prefix_path.sh'
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib'
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/bin'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib/pkgconfig/lazo_abierto.pc'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/lib/python3.10/site-packages'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_abierto/bin'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.ps1'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv'
+[1.171s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.sh'
+[1.171s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.bash'
+[1.172s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.zsh'
+[1.173s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/lazo_abierto/share/colcon-core/packages/lazo_abierto)
+[1.174s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/robotica/lazo_cerrado' with build type 'ament_cmake'
+[1.174s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/robotica/lazo_cerrado'
+[1.174s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.174s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/lazo_cerrado': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_cerrado -- -j4 -l4
+[11.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/lazo_cerrado' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_cerrado -- -j4 -l4
+[11.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/robotica/build/lazo_cerrado': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_cerrado
+[11.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lazo_cerrado)
+[11.706s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado' for CMake module files
+[11.707s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado' for CMake config files
+[11.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('lazo_cerrado', 'cmake_prefix_path')
+[11.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.ps1'
+[11.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.dsv'
+[11.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/robotica/build/lazo_cerrado' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/src/robotica/build/lazo_cerrado
+[11.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.sh'
+[11.710s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib'
+[11.710s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/bin'
+[11.710s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib/pkgconfig/lazo_cerrado.pc'
+[11.710s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib/python3.10/site-packages'
+[11.711s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/bin'
+[11.711s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.ps1'
+[11.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.dsv'
+[11.712s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.sh'
+[11.713s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.bash'
+[11.713s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.zsh'
+[11.714s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/lazo_cerrado/share/colcon-core/packages/lazo_cerrado)
+[11.714s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lazo_cerrado)
+[11.714s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado' for CMake module files
+[11.715s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado' for CMake config files
+[11.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('lazo_cerrado', 'cmake_prefix_path')
+[11.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.ps1'
+[11.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.dsv'
+[11.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/hook/cmake_prefix_path.sh'
+[11.717s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib'
+[11.718s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/bin'
+[11.718s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib/pkgconfig/lazo_cerrado.pc'
+[11.718s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/lib/python3.10/site-packages'
+[11.718s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/src/robotica/install/lazo_cerrado/bin'
+[11.719s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.ps1'
+[11.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.dsv'
+[11.720s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.sh'
+[11.721s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.bash'
+[11.722s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/src/robotica/install/lazo_cerrado/share/lazo_cerrado/package.zsh'
+[11.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/src/robotica/install/lazo_cerrado/share/colcon-core/packages/lazo_cerrado)
+[11.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.724s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[11.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.729s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.733s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[11.733s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.734s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.ps1'
+[11.736s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/src/robotica/install/_local_setup_util_ps1.py'
+[11.738s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.ps1'
+[11.739s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.sh'
+[11.740s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/src/robotica/install/_local_setup_util_sh.py'
+[11.741s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.sh'
+[11.743s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.bash'
+[11.744s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.bash'
+[11.745s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/src/robotica/install/local_setup.zsh'
+[11.746s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/src/robotica/install/setup.zsh'

@@ -1,0 +1,660 @@
+[0.000000] (-) TimerEvent: {}
+[0.000398] (robmovil_msgs) JobQueued: {'identifier': 'robmovil_msgs', 'dependencies': OrderedDict()}
+[0.000455] (lazo_abierto) JobQueued: {'identifier': 'lazo_abierto', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs')])}
+[0.000491] (modelo_omnidireccional) JobQueued: {'identifier': 'modelo_omnidireccional', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs')])}
+[0.000519] (lazo_cerrado) JobQueued: {'identifier': 'lazo_cerrado', 'dependencies': OrderedDict([('robmovil_msgs', '/root/ros2_ws/src/robotica/install/robmovil_msgs'), ('lazo_abierto', '/root/ros2_ws/src/robotica/install/lazo_abierto')])}
+[0.000906] (robmovil_msgs) JobStarted: {'identifier': 'robmovil_msgs'}
+[0.028167] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'cmake'}
+[0.028358] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'build'}
+[0.028483] (robmovil_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/robmovil_msgs', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/robmovil_msgs'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099745] (-) TimerEvent: {}
+[0.105837] (robmovil_msgs) StdoutLine: {'line': b'[  1%] Built target robmovil_msgs__cpp\n'}
+[0.107263] (robmovil_msgs) StdoutLine: {'line': b'[ 12%] Built target robmovil_msgs__rosidl_generator_c\n'}
+[0.119216] (robmovil_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_robmovil_msgs\n'}
+[0.154664] (robmovil_msgs) StdoutLine: {'line': b'[ 23%] Built target robmovil_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.171498] (robmovil_msgs) StdoutLine: {'line': b'[ 35%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.176975] (robmovil_msgs) StdoutLine: {'line': b'[ 46%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.177728] (robmovil_msgs) StdoutLine: {'line': b'[ 57%] Built target robmovil_msgs__rosidl_typesupport_cpp\n'}
+[0.199854] (-) TimerEvent: {}
+[0.203239] (robmovil_msgs) StdoutLine: {'line': b'[ 69%] Built target robmovil_msgs__rosidl_typesupport_introspection_c\n'}
+[0.213187] (robmovil_msgs) StdoutLine: {'line': b'[ 80%] Built target robmovil_msgs__rosidl_typesupport_c\n'}
+[0.239877] (robmovil_msgs) StdoutLine: {'line': b'[ 80%] Built target robmovil_msgs\n'}
+[0.268502] (robmovil_msgs) StdoutLine: {'line': b'[ 81%] Built target robmovil_msgs__py\n'}
+[0.299270] (robmovil_msgs) StdoutLine: {'line': b'[ 91%] Built target robmovil_msgs__rosidl_generator_py\n'}
+[0.302026] (-) TimerEvent: {}
+[0.338368] (robmovil_msgs) StdoutLine: {'line': b'[ 94%] Built target robmovil_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.341848] (robmovil_msgs) StdoutLine: {'line': b'[ 97%] Built target robmovil_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.353583] (robmovil_msgs) StdoutLine: {'line': b'[100%] Built target robmovil_msgs__rosidl_typesupport_c__pyext\n'}
+[0.402190] (-) TimerEvent: {}
+[0.458126] (robmovil_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.459030] (robmovil_msgs) StdoutLine: {'line': b'writing robmovil_msgs.egg-info/PKG-INFO\n'}
+[0.459258] (robmovil_msgs) StdoutLine: {'line': b'writing dependency_links to robmovil_msgs.egg-info/dependency_links.txt\n'}
+[0.459459] (robmovil_msgs) StdoutLine: {'line': b'writing top-level names to robmovil_msgs.egg-info/top_level.txt\n'}
+[0.462279] (robmovil_msgs) StdoutLine: {'line': b"reading manifest file 'robmovil_msgs.egg-info/SOURCES.txt'\n"}
+[0.463527] (robmovil_msgs) StdoutLine: {'line': b"writing manifest file 'robmovil_msgs.egg-info/SOURCES.txt'\n"}
+[0.498209] (robmovil_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robmovil_msgs_egg\n'}
+[0.502300] (-) TimerEvent: {}
+[0.514495] (robmovil_msgs) CommandEnded: {'returncode': 0}
+[0.514895] (robmovil_msgs) JobProgress: {'identifier': 'robmovil_msgs', 'progress': 'install'}
+[0.528974] (robmovil_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/robotica/build/robmovil_msgs'], 'cwd': '/root/ros2_ws/src/robotica/build/robmovil_msgs', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/robmovil_msgs'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.549337] (robmovil_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.549587] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/rosidl_interfaces/robmovil_msgs\n'}
+[0.549669] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.549733] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.549799] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.h\n'}
+[0.550345] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.550495] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.h\n'}
+[0.550605] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.h\n'}
+[0.550690] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.h\n'}
+[0.550782] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.c\n'}
+[0.550861] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.h\n'}
+[0.550930] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.h\n'}
+[0.551003] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.c\n'}
+[0.551072] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.h\n'}
+[0.551152] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__functions.h\n'}
+[0.551234] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.c\n'}
+[0.551316] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.h\n'}
+[0.551387] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.h\n'}
+[0.551455] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__functions.c\n'}
+[0.551518] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__functions.h\n'}
+[0.551586] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.h\n'}
+[0.551653] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__functions.h\n'}
+[0.551717] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.h\n'}
+[0.551793] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.c\n'}
+[0.551850] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.h\n'}
+[0.551908] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__functions.h\n'}
+[0.551965] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.h\n'}
+[0.552027] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.h\n'}
+[0.552097] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.h\n'}
+[0.552321] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__functions.c\n'}
+[0.552502] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.h\n'}
+[0.552672] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.h\n'}
+[0.552815] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.h\n'}
+[0.552972] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.553063] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.h\n'}
+[0.553131] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.h\n'}
+[0.553238] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.sh\n'}
+[0.553327] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/library_path.dsv\n'}
+[0.553389] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_c.so\n'}
+[0.553448] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.553505] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.553600] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.553663] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.553726] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553821] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553941] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.554052] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_c.h\n'}
+[0.554187] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[0.554276] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_c.h\n'}
+[0.554340] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.554411] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.554477] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.554540] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.554602] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.c\n'}
+[0.554672] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h\n'}
+[0.554734] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.c\n'}
+[0.554797] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_c.h\n'}
+[0.554858] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.c\n'}
+[0.554919] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_c.h\n'}
+[0.554980] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_c.h\n'}
+[0.555042] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_c.h\n'}
+[0.555105] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.c\n'}
+[0.555192] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.c\n'}
+[0.555265] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[0.555330] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.c\n'}
+[0.555393] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.555460] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.555523] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_c.so\n'}
+[0.555587] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.555649] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.555707] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.555765] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__builder.hpp\n'}
+[0.555829] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__struct.hpp\n'}
+[0.555891] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.hpp\n'}
+[0.555949] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.hpp\n'}
+[0.556375] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__struct.hpp\n'}
+[0.556482] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__struct.hpp\n'}
+[0.556553] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.hpp\n'}
+[0.556619] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__struct.hpp\n'}
+[0.556682] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__traits.hpp\n'}
+[0.556745] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.hpp\n'}
+[0.556808] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__traits.hpp\n'}
+[0.556872] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.hpp\n'}
+[0.556953] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.hpp\n'}
+[0.557022] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__struct.hpp\n'}
+[0.557095] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__builder.hpp\n'}
+[0.557188] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__traits.hpp\n'}
+[0.557270] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__builder.hpp\n'}
+[0.557344] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__traits.hpp\n'}
+[0.557424] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__builder.hpp\n'}
+[0.557500] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__traits.hpp\n'}
+[0.557575] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__builder.hpp\n'}
+[0.557648] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__builder.hpp\n'}
+[0.557739] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__traits.hpp\n'}
+[0.557820] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__struct.hpp\n'}
+[0.557900] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/multi_encoder_ticks.hpp\n'}
+[0.557968] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory_point.hpp\n'}
+[0.558039] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/trajectory.hpp\n'}
+[0.558106] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/encoder_ticks.hpp\n'}
+[0.558197] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark_array.hpp\n'}
+[0.558280] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/landmark.hpp\n'}
+[0.558362] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.558428] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.558486] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.558544] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.558603] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.558667] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.558738] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.558809] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/dds_fastrtps\n'}
+[0.558886] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.558955] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.559024] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.559091] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.559382] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.559533] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs\n'}
+[0.559647] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg\n'}
+[0.559707] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail\n'}
+[0.559765] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.559825] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.559884] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__type_support.cpp\n'}
+[0.559943] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560003] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560062] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560120] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory__type_support.cpp\n'}
+[0.560200] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.560273] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/encoder_ticks__type_support.cpp\n'}
+[0.560337] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/landmark_array__type_support.cpp\n'}
+[0.560405] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/multi_encoder_ticks__type_support.cpp\n'}
+[0.560477] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/include/robmovil_msgs/robmovil_msgs/msg/detail/trajectory_point__type_support.cpp\n'}
+[0.560544] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.560608] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_typesupport_cpp.so\n'}
+[0.560672] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.sh\n'}
+[0.560736] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/pythonpath.dsv\n'}
+[0.560799] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info\n'}
+[0.560863] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.560927] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.560997] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.561062] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.561128] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs\n'}
+[0.561213] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.561287] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.561371] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.561444] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg\n'}
+[0.561507] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks_s.c\n'}
+[0.561569] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_multi_encoder_ticks.py\n'}
+[0.561632] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark.py\n'}
+[0.561695] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks_s.c\n'}
+[0.561758] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array.py\n'}
+[0.561819] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_s.c\n'}
+[0.561883] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory.py\n'}
+[0.561946] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point_s.c\n'}
+[0.562013] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_array_s.c\n'}
+[0.562077] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_landmark_s.c\n'}
+[0.562164] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_trajectory_point.py\n'}
+[0.562259] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/_encoder_ticks.py\n'}
+[0.562335] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg/__init__.py\n'}
+[0.562416] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/_robmovil_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.562502] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.562577] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/librobmovil_msgs__rosidl_generator_py.so\n'}
+[0.562652] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/__init__.py\n'}
+[0.562726] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.602413] (-) TimerEvent: {}
+[0.604512] (robmovil_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs'...\n"}
+[0.604793] (robmovil_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/msg'...\n"}
+[0.610312] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.615373] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.615574] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages/robmovil_msgs/robmovil_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.615661] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/lib/librobmovil_msgs__rosidl_generator_py.so\n'}
+[0.615729] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.idl\n'}
+[0.615792] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.idl\n'}
+[0.615859] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.idl\n'}
+[0.615922] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.idl\n'}
+[0.616006] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.idl\n'}
+[0.616070] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.idl\n'}
+[0.616156] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/EncoderTicks.msg\n'}
+[0.616249] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/MultiEncoderTicks.msg\n'}
+[0.616319] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Trajectory.msg\n'}
+[0.616384] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/TrajectoryPoint.msg\n'}
+[0.616451] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/Landmark.msg\n'}
+[0.616517] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/msg/LandmarkArray.msg\n'}
+[0.616591] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/package_run_dependencies/robmovil_msgs\n'}
+[0.616655] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/parent_prefix_path/robmovil_msgs\n'}
+[0.616719] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.sh\n'}
+[0.616784] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/ament_prefix_path.dsv\n'}
+[0.616848] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.sh\n'}
+[0.616912] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/environment/path.dsv\n'}
+[0.616975] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.bash\n'}
+[0.617045] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.sh\n'}
+[0.617110] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.zsh\n'}
+[0.617194] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/local_setup.dsv\n'}
+[0.617267] (robmovil_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.dsv\n'}
+[0.617331] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/ament_index/resource_index/packages/robmovil_msgs\n'}
+[0.617395] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport.cmake\n'}
+[0.617460] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.617524] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.617588] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.617707] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.618105] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.618416] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.618506] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.618594] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.621294] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.621382] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.621449] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.621515] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.621588] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.621654] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.621719] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.621782] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/export_robmovil_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.621845] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.621907] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.621971] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.622044] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.622106] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.622190] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.622262] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.622328] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig.cmake\n'}
+[0.622391] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake/robmovil_msgsConfig-version.cmake\n'}
+[0.622454] (robmovil_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/package.xml\n'}
+[0.622519] (robmovil_msgs) CommandEnded: {'returncode': 0}
+[0.649952] (robmovil_msgs) JobEnded: {'identifier': 'robmovil_msgs', 'rc': 0}
+[0.650634] (lazo_abierto) JobStarted: {'identifier': 'lazo_abierto'}
+[0.656610] (modelo_omnidireccional) JobStarted: {'identifier': 'modelo_omnidireccional'}
+[0.685571] (lazo_abierto) JobProgress: {'identifier': 'lazo_abierto', 'progress': 'cmake'}
+[0.687170] (lazo_abierto) JobProgress: {'identifier': 'lazo_abierto', 'progress': 'build'}
+[0.687235] (lazo_abierto) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/lazo_abierto', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/lazo_abierto', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/lazo_abierto'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.693262] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'cmake'}
+[0.693315] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'build'}
+[0.693341] (modelo_omnidireccional) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.702505] (-) TimerEvent: {}
+[0.752889] (lazo_abierto) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.802629] (-) TimerEvent: {}
+[0.902993] (-) TimerEvent: {}
+[0.918232] (modelo_omnidireccional) StdoutLine: {'line': b'[100%] Built target pioneer_odometry_node\n'}
+[0.939212] (modelo_omnidireccional) CommandEnded: {'returncode': 0}
+[0.940625] (modelo_omnidireccional) JobProgress: {'identifier': 'modelo_omnidireccional', 'progress': 'install'}
+[0.941077] (modelo_omnidireccional) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'], 'cwd': '/root/ros2_ws/src/robotica/build/modelo_omnidireccional', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/modelo_omnidireccional'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[0.963573] (modelo_omnidireccional) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.964793] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/lib/modelo_omnidireccional/pioneer_odometry_node\n'}
+[0.969490] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/package_run_dependencies/modelo_omnidireccional\n'}
+[0.969618] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/parent_prefix_path/modelo_omnidireccional\n'}
+[0.969713] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.sh\n'}
+[0.969806] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/ament_prefix_path.dsv\n'}
+[0.969891] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.sh\n'}
+[0.969978] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/environment/path.dsv\n'}
+[0.970065] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.bash\n'}
+[0.970172] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.sh\n'}
+[0.970274] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.zsh\n'}
+[0.970373] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/local_setup.dsv\n'}
+[0.970461] (modelo_omnidireccional) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.dsv\n'}
+[0.970545] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/ament_index/resource_index/packages/modelo_omnidireccional\n'}
+[0.970633] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig.cmake\n'}
+[0.970724] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/cmake/modelo_omnidireccionalConfig-version.cmake\n'}
+[0.970813] (modelo_omnidireccional) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/src/robotica/install/modelo_omnidireccional/share/modelo_omnidireccional/package.xml\n'}
+[0.972504] (modelo_omnidireccional) CommandEnded: {'returncode': 0}
+[0.992203] (modelo_omnidireccional) JobEnded: {'identifier': 'modelo_omnidireccional', 'rc': 0}
+[1.002958] (lazo_abierto) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.003258] (-) TimerEvent: {}
+[1.006758] (lazo_abierto) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.012990] (lazo_abierto) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.028555] (lazo_abierto) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.046215] (lazo_abierto) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.082158] (lazo_abierto) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.084794] (lazo_abierto) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.103390] (-) TimerEvent: {}
+[1.204222] (-) TimerEvent: {}
+[1.243500] (lazo_abierto) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.297595] (lazo_abierto) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.304896] (-) TimerEvent: {}
+[1.313332] (lazo_abierto) StdoutLine: {'line': b'-- Found robmovil_msgs: 0.0.0 (/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake)\n'}
+[1.330244] (lazo_abierto) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.350189] (lazo_abierto) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.354728] (lazo_abierto) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.358696] (lazo_abierto) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.360422] (lazo_abierto) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.405038] (-) TimerEvent: {}
+[1.505782] (-) TimerEvent: {}
+[1.546647] (lazo_abierto) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.568019] (lazo_abierto) StdoutLine: {'line': b'-- Generating done\n'}
+[1.579970] (lazo_abierto) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/src/robotica/build/lazo_abierto\n'}
+[1.605921] (-) TimerEvent: {}
+[1.611072] (lazo_abierto) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trajectory_generator\x1b[0m\n'}
+[1.614225] (lazo_abierto) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trajectory_controller\x1b[0m\n'}
+[1.647984] (lazo_abierto) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o\x1b[0m\n'}
+[1.649231] (lazo_abierto) StdoutLine: {'line': b'[ 42%] Built target trajectory_controller\n'}
+[1.677290] (lazo_abierto) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trajectory_follower\x1b[0m\n'}
+[1.705796] (lazo_abierto) StdoutLine: {'line': b'[ 85%] Built target trajectory_follower\n'}
+[1.706009] (-) TimerEvent: {}
+[1.807366] (-) TimerEvent: {}
+[1.907781] (-) TimerEvent: {}
+[2.008125] (-) TimerEvent: {}
+[2.108501] (-) TimerEvent: {}
+[2.208860] (-) TimerEvent: {}
+[2.309224] (-) TimerEvent: {}
+[2.409601] (-) TimerEvent: {}
+[2.510034] (-) TimerEvent: {}
+[2.610647] (-) TimerEvent: {}
+[2.710988] (-) TimerEvent: {}
+[2.811353] (-) TimerEvent: {}
+[2.911692] (-) TimerEvent: {}
+[3.012049] (-) TimerEvent: {}
+[3.112407] (-) TimerEvent: {}
+[3.212790] (-) TimerEvent: {}
+[3.313465] (-) TimerEvent: {}
+[3.414107] (-) TimerEvent: {}
+[3.515224] (-) TimerEvent: {}
+[3.615648] (-) TimerEvent: {}
+[3.716169] (-) TimerEvent: {}
+[3.816533] (-) TimerEvent: {}
+[3.916911] (-) TimerEvent: {}
+[4.017288] (-) TimerEvent: {}
+[4.117635] (-) TimerEvent: {}
+[4.217979] (-) TimerEvent: {}
+[4.318334] (-) TimerEvent: {}
+[4.385896] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.386165] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting to \xe2\x80\x98\x1b[01m\x1b[Kconst ParameterDescriptor\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} from initializer list would use explicit constructor \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.386285] (lazo_abierto) StderrLine: {'line': b'   51 |     std::vector<double> spline_waypoints_data = \x1b[01;35m\x1b[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})\x1b[m\x1b[K;\n'}
+[4.386367] (lazo_abierto) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.386442] (lazo_abierto) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin C++11 and above a default constructor can be explicit\n'}
+[4.418444] (-) TimerEvent: {}
+[4.518792] (-) TimerEvent: {}
+[4.619151] (-) TimerEvent: {}
+[4.719507] (-) TimerEvent: {}
+[4.819859] (-) TimerEvent: {}
+[4.920210] (-) TimerEvent: {}
+[5.020544] (-) TimerEvent: {}
+[5.120883] (-) TimerEvent: {}
+[5.221253] (-) TimerEvent: {}
+[5.321602] (-) TimerEvent: {}
+[5.421949] (-) TimerEvent: {}
+[5.522302] (-) TimerEvent: {}
+[5.622664] (-) TimerEvent: {}
+[5.723087] (-) TimerEvent: {}
+[5.823578] (-) TimerEvent: {}
+[5.923971] (-) TimerEvent: {}
+[6.024391] (-) TimerEvent: {}
+[6.124782] (-) TimerEvent: {}
+[6.225234] (-) TimerEvent: {}
+[6.325632] (-) TimerEvent: {}
+[6.426278] (-) TimerEvent: {}
+[6.526664] (-) TimerEvent: {}
+[6.627065] (-) TimerEvent: {}
+[6.659406] (lazo_abierto) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable trajectory_generator\x1b[0m\n'}
+[6.727212] (-) TimerEvent: {}
+[6.827532] (-) TimerEvent: {}
+[6.888859] (lazo_abierto) StdoutLine: {'line': b'[100%] Built target trajectory_generator\n'}
+[6.898861] (lazo_abierto) CommandEnded: {'returncode': 0}
+[6.899713] (lazo_abierto) JobProgress: {'identifier': 'lazo_abierto', 'progress': 'install'}
+[6.899934] (lazo_abierto) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/src/robotica/build/lazo_abierto'], 'cwd': '/root/ros2_ws/src/robotica/build/lazo_abierto', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/lazo_abierto'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[6.907343] (lazo_abierto) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.907557] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/libtrajectory_controller.a\n'}
+[6.915116] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower\n'}
+[6.917731] (lazo_abierto) StdoutLine: {'line': b'-- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_follower" to ""\n'}
+[6.917886] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator\n'}
+[6.918831] (lazo_abierto) StdoutLine: {'line': b'-- Set runtime path of "/root/ros2_ws/src/robotica/install/lazo_abierto/lib/lazo_abierto/trajectory_generator" to ""\n'}
+[6.918956] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include\n'}
+[6.919095] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto\n'}
+[6.919222] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/TrajectoryFollower.h\n'}
+[6.919300] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/include/lazo_abierto/FeedForwardController.h\n'}
+[6.919448] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch\n'}
+[6.919527] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto//launch/lazo_abierto.launch.py\n'}
+[6.919655] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.sh\n'}
+[6.919822] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/library_path.dsv\n'}
+[6.920073] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/package_run_dependencies/lazo_abierto\n'}
+[6.920319] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/parent_prefix_path/lazo_abierto\n'}
+[6.920520] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.sh\n'}
+[6.920715] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/ament_prefix_path.dsv\n'}
+[6.920906] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.sh\n'}
+[6.921101] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/environment/path.dsv\n'}
+[6.921302] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.bash\n'}
+[6.921480] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.sh\n'}
+[6.921676] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.zsh\n'}
+[6.921835] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/local_setup.dsv\n'}
+[6.922030] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.dsv\n'}
+[6.922409] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/ament_index/resource_index/packages/lazo_abierto\n'}
+[6.922650] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport.cmake\n'}
+[6.922883] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/export_trajectory_controllerExport-noconfig.cmake\n'}
+[6.923167] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.923338] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.923526] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.923714] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig.cmake\n'}
+[6.923882] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake/lazo_abiertoConfig-version.cmake\n'}
+[6.924054] (lazo_abierto) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/package.xml\n'}
+[6.926567] (lazo_abierto) CommandEnded: {'returncode': 0}
+[6.927951] (-) TimerEvent: {}
+[6.940664] (lazo_abierto) JobEnded: {'identifier': 'lazo_abierto', 'rc': 0}
+[6.941956] (lazo_cerrado) JobStarted: {'identifier': 'lazo_cerrado'}
+[6.954965] (lazo_cerrado) JobProgress: {'identifier': 'lazo_cerrado', 'progress': 'cmake'}
+[6.955346] (lazo_cerrado) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/robotica/lazo_cerrado', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/robotica/install/lazo_cerrado'], 'cwd': '/root/ros2_ws/src/robotica/build/lazo_cerrado', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/lazo_cerrado'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[7.021815] (lazo_cerrado) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.028083] (-) TimerEvent: {}
+[7.079358] (lazo_cerrado) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.086573] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.128237] (-) TimerEvent: {}
+[7.154123] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.162726] (lazo_cerrado) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.162990] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.164058] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.166050] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.228340] (-) TimerEvent: {}
+[7.241099] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.250889] (lazo_cerrado) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.251281] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.251808] (lazo_cerrado) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.256494] (lazo_cerrado) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.328476] (-) TimerEvent: {}
+[7.407653] (lazo_cerrado) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.428591] (-) TimerEvent: {}
+[7.528932] (-) TimerEvent: {}
+[7.572269] (lazo_cerrado) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.579437] (lazo_cerrado) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.591005] (lazo_cerrado) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.605829] (lazo_cerrado) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.625414] (lazo_cerrado) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.629049] (-) TimerEvent: {}
+[7.680934] (lazo_cerrado) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.684748] (lazo_cerrado) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.729210] (-) TimerEvent: {}
+[7.781303] (lazo_cerrado) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.813934] (lazo_cerrado) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.829313] (-) TimerEvent: {}
+[7.868437] (lazo_cerrado) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.881292] (lazo_cerrado) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.929448] (-) TimerEvent: {}
+[7.959258] (lazo_cerrado) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.960098] (lazo_cerrado) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.029575] (-) TimerEvent: {}
+[8.030184] (lazo_cerrado) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.031288] (lazo_cerrado) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.088952] (lazo_cerrado) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[8.099991] (lazo_cerrado) StdoutLine: {'line': b'-- Found robmovil_msgs: 0.0.0 (/root/ros2_ws/src/robotica/install/robmovil_msgs/share/robmovil_msgs/cmake)\n'}
+[8.119911] (lazo_cerrado) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.129706] (-) TimerEvent: {}
+[8.141119] (lazo_cerrado) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[8.155807] (lazo_cerrado) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[8.229849] (-) TimerEvent: {}
+[8.254087] (lazo_cerrado) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[8.277081] (lazo_cerrado) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[8.278380] (lazo_cerrado) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[8.278595] (lazo_cerrado) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[8.280017] (lazo_cerrado) StdoutLine: {'line': b'-- Found lazo_abierto: 0.0.0 (/root/ros2_ws/src/robotica/install/lazo_abierto/share/lazo_abierto/cmake)\n'}
+[8.287589] (lazo_cerrado) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[8.329998] (-) TimerEvent: {}
+[8.357538] (lazo_cerrado) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.377429] (lazo_cerrado) StdoutLine: {'line': b'-- Generating done\n'}
+[8.382975] (lazo_cerrado) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/src/robotica/build/lazo_cerrado\n'}
+[8.391660] (lazo_cerrado) CommandEnded: {'returncode': 0}
+[8.392314] (lazo_cerrado) JobProgress: {'identifier': 'lazo_cerrado', 'progress': 'build'}
+[8.393196] (lazo_cerrado) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/src/robotica/build/lazo_cerrado', '--', '-j4', '-l4'], 'cwd': '/root/ros2_ws/src/robotica/build/lazo_cerrado', 'env': OrderedDict([('HOSTNAME', 'bb7d6dde2fc1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto/lib:/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('COPPELIASIM_ROOT_DIR', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models/:/root/catkin_ws/volumen/models'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/opt/ros/humble/bin:/opt/CoppeliaSim_Edu_V4_7_0_rev2_Ubuntu20_04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':20'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '12'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('PWD', '/root/ros2_ws/src/robotica/build/lazo_cerrado'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:/root/ros2_ws/install/robmovil_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/src/robotica/install/lazo_abierto:/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble')]), 'shell': False}
+[8.430130] (-) TimerEvent: {}
+[8.447048] (lazo_cerrado) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o\x1b[0m\n'}
+[8.447807] (lazo_cerrado) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/logger.dir/src/logger_node.cpp.o\x1b[0m\n'}
+[8.450054] (lazo_cerrado) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o\x1b[0m\n'}
+[8.530233] (-) TimerEvent: {}
+[8.631218] (-) TimerEvent: {}
+[8.731735] (-) TimerEvent: {}
+[8.833030] (-) TimerEvent: {}
+[8.933455] (-) TimerEvent: {}
+[9.034189] (-) TimerEvent: {}
+[9.137491] (-) TimerEvent: {}
+[9.238021] (-) TimerEvent: {}
+[9.338600] (-) TimerEvent: {}
+[9.439183] (-) TimerEvent: {}
+[9.539920] (-) TimerEvent: {}
+[9.641609] (-) TimerEvent: {}
+[9.743686] (-) TimerEvent: {}
+[9.845810] (-) TimerEvent: {}
+[9.946580] (-) TimerEvent: {}
+[10.048372] (-) TimerEvent: {}
+[10.148763] (-) TimerEvent: {}
+[10.249885] (-) TimerEvent: {}
+[10.350442] (-) TimerEvent: {}
+[10.451076] (-) TimerEvent: {}
+[10.554227] (-) TimerEvent: {}
+[10.654635] (-) TimerEvent: {}
+[10.755242] (-) TimerEvent: {}
+[10.855692] (-) TimerEvent: {}
+[10.957846] (-) TimerEvent: {}
+[11.058240] (-) TimerEvent: {}
+[11.158679] (-) TimerEvent: {}
+[11.259574] (-) TimerEvent: {}
+[11.362222] (-) TimerEvent: {}
+[11.462622] (-) TimerEvent: {}
+[11.563112] (-) TimerEvent: {}
+[11.663619] (-) TimerEvent: {}
+[11.764091] (-) TimerEvent: {}
+[11.845830] (lazo_cerrado) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/kinematic_position_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[11.846087] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kextra qualification \xe2\x80\x98\x1b[01m\x1b[KKinematicPositionController::\x1b[m\x1b[K\xe2\x80\x99 on member \xe2\x80\x98\x1b[01m\x1b[Kcontrol\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[11.846245] (lazo_cerrado) StderrLine: {'line': b'   19 |     bool \x1b[01;31m\x1b[KKinematicPositionController\x1b[m\x1b[K::control(const rclcpp::Time &t, double &vx, double &vy, double &w)\n'}
+[11.846333] (lazo_cerrado) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.847344] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:19:103:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[11.848214] (lazo_cerrado) StderrLine: {'line': b'   19 | ontrol(const rclcpp::Time &t, double &vx, double &vy, double &w\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[11.848369] (lazo_cerrado) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.848442] (lazo_cerrado) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[11.864225] (-) TimerEvent: {}
+[11.925547] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool KinematicPositionController::getCurrentGoal(const rclcpp::Time&, double&, double&, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.926543] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:47:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTIME_BASED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.926817] (lazo_cerrado) StderrLine: {'line': b'   47 |         case \x1b[01;31m\x1b[KTIME_BASED\x1b[m\x1b[K: return getTimeBasedGoal(t, x, y, a);\n'}
+[11.926914] (lazo_cerrado) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.964361] (-) TimerEvent: {}
+[12.065014] (-) TimerEvent: {}
+[12.068947] (lazo_cerrado) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.cpp:2\x1b[m\x1b[K:\n'}
+[12.069289] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kextra qualification \xe2\x80\x98\x1b[01m\x1b[KKinematicPositionController::\x1b[m\x1b[K\xe2\x80\x99 on member \xe2\x80\x98\x1b[01m\x1b[Kcontrol\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[12.069398] (lazo_cerrado) StderrLine: {'line': b'   19 |     bool \x1b[01;31m\x1b[KKinematicPositionController\x1b[m\x1b[K::control(const rclcpp::Time &t, double &vx, double &vy, double &w)\n'}
+[12.069480] (lazo_cerrado) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.069553] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:19:103:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[12.069632] (lazo_cerrado) StderrLine: {'line': b'   19 |     bool KinematicPositionController::control(const rclcpp::Time &t, double &vx, double &vy, double &w\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[12.069707] (lazo_cerrado) StderrLine: {'line': b'      |                                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.069778] (lazo_cerrado) StderrLine: {'line': b'      |                                                                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[12.129627] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool KinematicPositionController::getCurrentGoal(const rclcpp::Time&, double&, double&, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.129861] (lazo_cerrado) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:47:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTIME_BASED\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.129960] (lazo_cerrado) StderrLine: {'line': b'   47 |         case \x1b[01;31m\x1b[KTIME_BASED\x1b[m\x1b[K: return getTimeBasedGoal(t, x, y, a);\n'}
+[12.130034] (lazo_cerrado) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.165167] (-) TimerEvent: {}
+[12.267413] (-) TimerEvent: {}
+[12.368214] (-) TimerEvent: {}
+[12.469217] (-) TimerEvent: {}
+[12.569751] (-) TimerEvent: {}
+[12.672516] (-) TimerEvent: {}
+[12.706249] (lazo_cerrado) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_follower_cl.dir/build.make:76: CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o] Error 1\n'}
+[12.706507] (lazo_cerrado) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[12.772643] (-) TimerEvent: {}
+[12.873238] (-) TimerEvent: {}
+[12.973679] (-) TimerEvent: {}
+[13.074087] (-) TimerEvent: {}
+[13.174517] (-) TimerEvent: {}
+[13.274910] (-) TimerEvent: {}
+[13.375328] (-) TimerEvent: {}
+[13.475720] (-) TimerEvent: {}
+[13.576101] (-) TimerEvent: {}
+[13.676496] (-) TimerEvent: {}
+[13.776885] (-) TimerEvent: {}
+[13.877265] (-) TimerEvent: {}
+[13.977735] (-) TimerEvent: {}
+[14.078224] (-) TimerEvent: {}
+[14.178608] (-) TimerEvent: {}
+[14.279223] (-) TimerEvent: {}
+[14.379793] (-) TimerEvent: {}
+[14.480191] (-) TimerEvent: {}
+[14.580563] (-) TimerEvent: {}
+[14.652827] (lazo_cerrado) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_follower_cl.dir/build.make:90: CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o] Error 1\n'}
+[14.653179] (lazo_cerrado) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/trajectory_follower_cl.dir/all] Error 2\n'}
+[14.653358] (lazo_cerrado) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[14.680725] (-) TimerEvent: {}
+[14.781178] (-) TimerEvent: {}
+[14.881582] (-) TimerEvent: {}
+[14.981984] (-) TimerEvent: {}
+[15.082403] (-) TimerEvent: {}
+[15.182806] (-) TimerEvent: {}
+[15.283220] (-) TimerEvent: {}
+[15.383602] (-) TimerEvent: {}
+[15.483986] (-) TimerEvent: {}
+[15.584390] (-) TimerEvent: {}
+[15.684775] (-) TimerEvent: {}
+[15.785219] (-) TimerEvent: {}
+[15.885609] (-) TimerEvent: {}
+[15.985977] (-) TimerEvent: {}
+[16.086413] (-) TimerEvent: {}
+[16.186792] (-) TimerEvent: {}
+[16.287178] (-) TimerEvent: {}
+[16.387561] (-) TimerEvent: {}
+[16.487945] (-) TimerEvent: {}
+[16.588335] (-) TimerEvent: {}
+[16.688714] (-) TimerEvent: {}
+[16.789094] (-) TimerEvent: {}
+[16.889527] (-) TimerEvent: {}
+[16.989937] (-) TimerEvent: {}
+[17.090356] (-) TimerEvent: {}
+[17.190743] (-) TimerEvent: {}
+[17.291171] (-) TimerEvent: {}
+[17.391569] (-) TimerEvent: {}
+[17.491917] (-) TimerEvent: {}
+[17.592250] (-) TimerEvent: {}
+[17.692593] (-) TimerEvent: {}
+[17.792943] (-) TimerEvent: {}
+[17.893320] (-) TimerEvent: {}
+[17.993658] (-) TimerEvent: {}
+[18.093990] (-) TimerEvent: {}
+[18.194356] (-) TimerEvent: {}
+[18.294699] (-) TimerEvent: {}
+[18.395034] (-) TimerEvent: {}
+[18.495411] (-) TimerEvent: {}
+[18.595742] (-) TimerEvent: {}
+[18.696076] (-) TimerEvent: {}
+[18.796422] (-) TimerEvent: {}
+[18.896757] (-) TimerEvent: {}
+[18.997082] (-) TimerEvent: {}
+[19.097421] (-) TimerEvent: {}
+[19.197745] (-) TimerEvent: {}
+[19.298159] (-) TimerEvent: {}
+[19.398524] (-) TimerEvent: {}
+[19.498962] (-) TimerEvent: {}
+[19.599446] (-) TimerEvent: {}
+[19.699745] (-) TimerEvent: {}
+[19.800049] (-) TimerEvent: {}
+[19.900383] (-) TimerEvent: {}
+[20.000689] (-) TimerEvent: {}
+[20.100993] (-) TimerEvent: {}
+[20.201323] (-) TimerEvent: {}
+[20.301636] (-) TimerEvent: {}
+[20.401935] (-) TimerEvent: {}
+[20.502244] (-) TimerEvent: {}
+[20.602572] (-) TimerEvent: {}
+[20.702878] (-) TimerEvent: {}
+[20.803211] (-) TimerEvent: {}
+[20.903507] (-) TimerEvent: {}
+[21.003815] (-) TimerEvent: {}
+[21.104119] (-) TimerEvent: {}
+[21.204460] (-) TimerEvent: {}
+[21.304769] (-) TimerEvent: {}
+[21.328953] (lazo_cerrado) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable logger\x1b[0m\n'}
+[21.404931] (-) TimerEvent: {}
+[21.505376] (-) TimerEvent: {}
+[21.605789] (-) TimerEvent: {}
+[21.706184] (-) TimerEvent: {}
+[21.806528] (-) TimerEvent: {}
+[21.886820] (lazo_cerrado) StdoutLine: {'line': b'[ 80%] Built target logger\n'}
+[21.887889] (lazo_cerrado) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.889823] (lazo_cerrado) CommandEnded: {'returncode': 2}
+[21.894375] (lazo_cerrado) JobEnded: {'identifier': 'lazo_cerrado', 'rc': 2}
+[21.904964] (-) EventReactorShutdown: {}

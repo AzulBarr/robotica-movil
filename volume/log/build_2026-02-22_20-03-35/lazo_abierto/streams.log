@@ -1,0 +1,14 @@
+[0.019s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.115s] [ 28%] Built target trajectory_controller
+[0.128s] [ 42%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target trajectory_follower[0m
+[0.163s] [ 85%] Built target trajectory_follower
+[0.470s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kangles/angles.h: No such file or directory
+[0.470s]     9 | #include [01;31m[K<angles/angles.h>[m[K
+[0.470s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.470s] compilation terminated.
+[0.474s] gmake[2]: *** [CMakeFiles/trajectory_generator.dir/build.make:76: CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o] Error 1
+[0.474s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/trajectory_generator.dir/all] Error 2
+[0.474s] gmake: *** [Makefile:146: all] Error 2
+[0.478s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4

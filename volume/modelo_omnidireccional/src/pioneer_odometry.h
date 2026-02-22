@@ -6,10 +6,7 @@
 #include <std_msgs/msg/float64.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <tf2_ros/transform_broadcaster.h>
-<<<<<<< HEAD
-=======
 #include <robmovil_msgs/msg/multi_encoder_ticks.hpp>
->>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
 
 namespace robmovil
 {

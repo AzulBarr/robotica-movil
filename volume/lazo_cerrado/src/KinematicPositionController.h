@@ -12,19 +12,11 @@ class KinematicPositionController : public TrajectoryFollower
 {
   public:
     
-<<<<<<< HEAD
-    enum GoalSelectionType { TIME_BASED, PURSUIT_BASED, FIXED_GOAL };
-    
-    KinematicPositionController();
-
-    bool control(const rclcpp::Time& t, double& v, double& w);
-=======
     enum GoalSelectionType {PURSUIT_BASED, FIXED_GOAL };
     
     KinematicPositionController();
 
-    bool KinematicPositionController::control(const rclcpp::Time &t, double &vx, double &vy, double &w)
->>>>>>> b63f5b9a05067ef0ad2a2c8a33cc374104bdce38
+    bool control(const rclcpp::Time &t, double &vx, double &vy, double &w);
 
   private:
 
@@ -52,10 +44,9 @@ class KinematicPositionController : public TrajectoryFollower
     {
       switch(goal_selection_)
       {
-        case TIME_BASED: return getTimeBasedGoal(t, x, y, a);
         case PURSUIT_BASED: return getPursuitBasedGoal(t, x, y, a);
         case FIXED_GOAL: x = fixed_goal_x_; y = fixed_goal_y_; a = fixed_goal_a_; return true;
-        default: return getTimeBasedGoal(t, x, y, a);
+        default: return getPursuitBasedGoal(t, x, y, a);
       }
     }
     

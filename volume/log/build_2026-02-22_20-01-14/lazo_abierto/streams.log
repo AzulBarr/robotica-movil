@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/root/ros2_ws/src/robotica/build/lazo_abierto': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.121s] [ 28%] Built target trajectory_controller
+[0.122s] [ 42%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o[0m
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target trajectory_follower[0m
+[0.188s] [ 57%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/FeedForwardController.cpp.o[0m
+[2.979s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.980s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[2.980s]    51 |     std::vector<double> spline_waypoints_data = [01;35m[Ktrajectory_generator_node->declare_parameter<std::vector<double>>("spline_waypoints", {})[m[K;
+[2.980s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.980s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:51:114:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[2.996s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:[m[K In function ‘[01m[Kvoid build_spline_trajectory(double, std::vector<std::vector<double, std::allocator<double> > >&, robmovil_msgs::msg::Trajectory&, nav_msgs::msg::Path&)[m[K’:
+[2.996s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:218:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kangles[m[K’ has not been declared
+[2.997s]   218 |       double a = [01;31m[Kangles[m[K::normalize_angle(
+[2.997s]       |                  [01;31m[K^~~~~~[m[K
+[2.997s] [01m[K/root/ros2_ws/src/robotica/lazo_abierto/src/trajectory_generator_node.cpp:221:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kangles[m[K’ has not been declared
+[2.997s]   221 |       double va = [01;31m[Kangles[m[K::normalize_angle(thetab - thetaa) / delta_time;
+[2.997s]       |                   [01;31m[K^~~~~~[m[K
+[3.564s] [ 71%] [32m[1mLinking CXX executable trajectory_follower[0m
+[4.091s] [ 85%] Built target trajectory_follower
+[4.207s] gmake[2]: *** [CMakeFiles/trajectory_generator.dir/build.make:76: CMakeFiles/trajectory_generator.dir/src/trajectory_generator_node.cpp.o] Error 1
+[4.207s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/trajectory_generator.dir/all] Error 2
+[4.207s] gmake: *** [Makefile:146: all] Error 2
+[4.210s] Invoked command in '/root/ros2_ws/src/robotica/build/lazo_abierto' returned '2': AMENT_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs:/root/ros2_ws/install/sim_ros2_interface:/root/ros2_ws/install/modelo_omnidireccional:/root/ros2_ws/install/robmovil_msgs:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/lib:/root/ros2_ws/install/robmovil_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/root/ros2_ws/src/robotica/install/robmovil_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/src/robotica/build/lazo_abierto -- -j4 -l4

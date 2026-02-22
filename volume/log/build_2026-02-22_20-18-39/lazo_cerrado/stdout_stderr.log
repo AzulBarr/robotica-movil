@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_follower_cl[0m
+[ 40%] Built target logger
+[ 60%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o[0m
+In file included from [01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.cpp:2[m[K:
+[01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:[m[K In member function ‘[01m[Kbool KinematicPositionController::getCurrentGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[KTIME_BASED[m[K’ was not declared in this scope
+   47 |         case [01;31m[KTIME_BASED[m[K: return getTimeBasedGoal(t, x, y, a);
+      |              [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/kinematic_position_controller_node.cpp:2[m[K:
+[01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:[m[K In member function ‘[01m[Kbool KinematicPositionController::getCurrentGoal(const rclcpp::Time&, double&, double&, double&)[m[K’:
+[01m[K/root/ros2_ws/src/robotica/lazo_cerrado/src/KinematicPositionController.h:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[KTIME_BASED[m[K’ was not declared in this scope
+   47 |         case [01;31m[KTIME_BASED[m[K: return getTimeBasedGoal(t, x, y, a);
+      |              [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trajectory_follower_cl.dir/build.make:76: CMakeFiles/trajectory_follower_cl.dir/src/kinematic_position_controller_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/trajectory_follower_cl.dir/build.make:90: CMakeFiles/trajectory_follower_cl.dir/src/KinematicPositionController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/trajectory_follower_cl.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
