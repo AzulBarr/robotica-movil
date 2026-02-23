@@ -84,11 +84,8 @@ bool KinematicPositionController::control(
   vy = K_Y * dy;
   w  = K_THETA * dtheta;
 
-  RCLCPP_INFO(
-      this->get_logger(),
-      "dx: %.2f, dy: %.2f, dtheta: %.2f | vx: %.2f, vy: %.2f, w: %.2f",
-      dx, dy, dtheta, vx, vy, w);
-
+  RCLCPP_INFO(this->get_logger(), "vx: %.2f, vy: %.2f, w: %.2f", vx, vy, w);
+  
   return true;
 }
 
@@ -109,17 +106,17 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time &t, dou
   // Se obtiene la trayectoria requerida.
   const robmovil_msgs::msg::Trajectory &trajectory = getTrajectory();
 
-  /** EJERCICIO 3:
+  /** 
    * Se recomienda encontrar el waypoint de la trayectoria más cercano al robot en términos de x,y
    * y luego buscar el primer waypoint que se encuentre a una distancia predefinida de lookahead en x,y */
 
   /* NOTA: De esta manera les es posible recorrer la trayectoria requerida */
 
-  double lookahead = 0.5;           // cuanto tiene que ser lookahead?
-  double dist_min = pow(2.0, 63.0); // no me acuerdo si 2^64 es overflow
+  double lookahead = 0.5;           
+  double dist_min = pow(2.0, 63.0); 
   int indice_punto_mas_cercano = 0;
 
-  // paso 2 de la diapo, buscar el punto mas cercano al robot
+  // buscar el punto mas cercano al robot
   for (unsigned int i = 0; i < trajectory.points.size(); i++)
   {
     // Recorren cada waypoint definido
@@ -140,7 +137,7 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time &t, dou
   }
 
   int indice_lookahead = 0;
-  // paso 3 encontrar un punto goal  que este <lookahead> delante del robot
+  // paso 3 encontrar un punto goal que este <lookahead> delante del robot
   // miramos desde el indice mas cercano al robot para adelante
   for (unsigned int i = indice_punto_mas_cercano; i < trajectory.points.size(); i++)
   {

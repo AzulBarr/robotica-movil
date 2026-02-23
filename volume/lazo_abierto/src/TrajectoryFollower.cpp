@@ -18,8 +18,8 @@ void TrajectoryFollower::handleNewTrajectory(const robmovil_msgs::msg::Trajector
 
   do { t0_ = this->now(); } while (t0_.seconds() == 0.0);
   
-  RCLCPP_INFO(this->get_logger(), "t0: %.9f", t0_.seconds());
-  RCLCPP_INFO(this->get_logger(), "trajectory size: %zu", trajectory_msg.points.size());
+  //RCLCPP_INFO(this->get_logger(), "t0: %.9f", t0_.seconds());
+  //RCLCPP_INFO(this->get_logger(), "trajectory size: %zu", trajectory_msg.points.size());
 
   current_trajectory_ = trajectory_msg;
 
@@ -29,7 +29,7 @@ void TrajectoryFollower::handleNewTrajectory(const robmovil_msgs::msg::Trajector
 void TrajectoryFollower::timerCallback()
 {
   rclcpp::Time t = this->now();
-  RCLCPP_INFO(this->get_logger(), "t: %.9f", t.seconds());
+  //RCLCPP_INFO(this->get_logger(), "t: %.9f", t.seconds());
 
   // Aplicar la ley de control
 

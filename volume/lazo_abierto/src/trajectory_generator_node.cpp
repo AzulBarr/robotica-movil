@@ -79,7 +79,14 @@ int main(int argc, char **argv)
 
     build_spline_trajectory(stepping, spline_waypoints, trajectory_msg, path_msg);
   }
-
+  for (size_t i = 0; i < trajectory_msg.points.size(); i++)
+  {
+    //RCLCPP_INFO(trajectory_generator_node->get_logger(), "Path generated, x: %f, y: %f", path_msg.poses[i].pose.position.x, path_msg.poses[i].pose.position.y);
+    RCLCPP_INFO(trajectory_generator_node->get_logger(), "Trajectory generated, vx: %f, vy: %f, w: %f", trajectory_msg.points[i].velocity.linear.x, trajectory_msg.points[i].velocity.linear.y, trajectory_msg.points[i].velocity.angular.z);
+  }
+  // EL PATH SE VE BIEN, LA TRAJECTORIA MASO MENOS PORQUE LE DA VELOCIDAD EN Y PERO EL ROBOT ESTA ORIENTADO EN EL EJE Y
+  // LUEGO SE DISTORCIONAN LAS VELOCIDADES. 
+  // CAUSA: EL PROBLEMA ES QUE LA ORIENTACION INICIAL DE LA TRAJECTORIA NO ESTA EN EL EJE X, SINO QUE ESTA ORIENTADA EN EL EJE Y, POR LO QUE LAS VELOCIDADES EN X SE DISTORSIONAN CON LAS VELOCIDADES EN Y. PARA SOLUCIONARLO, SE DEBE ROTAR LA TRAJECTORIA INICIAL PARA QUE ESTE ORIENTADA EN EL EJE X, Y LUEGO SE APLICAN LAS VELOCIDADES CORRECTAS.
   trajectory_publisher->publish(trajectory_msg);
   path_publisher->publish(path_msg);
 
