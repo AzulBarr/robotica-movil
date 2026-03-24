@@ -1,38 +1,37 @@
 #include <lazo_abierto/FeedForwardController.h>
-#include <cmath>
+//incluido por mi
+#include <tf2/utils.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 FeedForwardController::FeedForwardController() : TrajectoryFollower()
-{
-}
+{}
 
-double lineal_interp(const rclcpp::Time &t0, const rclcpp::Time &t1, double v0, double v1, const rclcpp::Time &t)
+double lineal_interp(const rclcpp::Time& t0, const rclcpp::Time& t1, double v0, double v1, const rclcpp::Time& t)
 {
   /** COMPLETAR: esta funcion debe interpolar entre las velocidades requeridas.
    * entre v0 y v1 dependiendo el tiempo trancurrido entre ambos
    * considerar que t siempre se encuentra en t0 y t1. */
-
-  double res = v0 + ((t - t0).seconds() / (t1 - t0).seconds()) * (v1 - v0);
-
-  return res;
+  v0 = v0 + (v1 - v0) * ((t - t0).seconds() / (t1 - t0).seconds());
+  return v0;
 }
 
-bool FeedForwardController::control(const rclcpp::Time &t, double &vx, double &vy, double &w)
+bool FeedForwardController::control(const rclcpp::Time& t, double& vx, double& vy, double& w)
 {
   size_t next_point_idx;
 
   /* Cuando la trayectoria se termina se devuelve false */
-  if (not nextPointIndex(t, next_point_idx))
+  if( not nextPointIndex(t, next_point_idx ) )
     return false;
 
-  //RCLCPP_INFO(this->get_logger(), "processing index: %zu", next_point_idx);
+  RCLCPP_INFO(this->get_logger(), "processing index: %zu", next_point_idx);
 
   /* se obtienen los puntos de la trayectoria mas proximos en tiempo (el punto anteriormente transitado y el proximo a alcanzar) */
-  const robmovil_msgs::msg::TrajectoryPoint &prev_point = getTrajectory().points[next_point_idx - 1];
-  const robmovil_msgs::msg::TrajectoryPoint &next_point = getTrajectory().points[next_point_idx];
+  const robmovil_msgs::msg::TrajectoryPoint& prev_point = getTrajectory().points[ next_point_idx-1 ];
+  const robmovil_msgs::msg::TrajectoryPoint& next_point = getTrajectory().points[ next_point_idx ];
 
   /* tiempos requeridos para cada uno de los puntos (se debe alcanzar el siguiente punto en el tiempo t1) */
-  const rclcpp::Time &t0 = getInitialTime() + prev_point.time_from_start;
-  const rclcpp::Time &t1 = getInitialTime() + next_point.time_from_start;
+  const rclcpp::Time& t0 = getInitialTime() + prev_point.time_from_start;
+  const rclcpp::Time& t1 = getInitialTime() + next_point.time_from_start;
 
   assert(t0 <= t);
   assert(t < t1);
@@ -49,21 +48,24 @@ bool FeedForwardController::control(const rclcpp::Time &t, double &vx, double &v
   double va0 = prev_point.velocity.angular.z;
   double va1 = next_point.velocity.angular.z;
 
-  /*RCLCPP_INFO(this->get_logger(), "inter: t0=%ld t1=%ld vx0=%.3f vx1=%.3f va0=%.3f va1=%.3f t=%ld",
-              t0.nanoseconds(), t1.nanoseconds(), vx0, vx1, va0, va1, t.nanoseconds());
+  RCLCPP_INFO(this->get_logger(), "inter: t0=%ld t1=%ld vx0=%.3f vx1=%.3f va0=%.3f va1=%.3f t=%ld",
+            t0.nanoseconds(), t1.nanoseconds(), vx0, vx1, va0, va1, t.nanoseconds());
 
-  RCLCPP_INFO(this->get_logger(), "trajectory size: %zu", getTrajectory().points.size());*/
+  RCLCPP_INFO(this->get_logger(), "trajectory size: %zu", getTrajectory().points.size());
+
+  double theta0 = tf2::getYaw(prev_point.transform.rotation);
+  double theta1 = tf2::getYaw(next_point.transform.rotation);
 
   /* realizar una interpolacion entre las velocidades requeridas */
-  double v_x = lineal_interp(t0, t1, vx0, vx1, t); // calculo de la velocidad lineal en X
-  double v_y = lineal_interp(t0, t1, vy0, vy1, t); // calculo de la velocidad lineal en Y
-  double v_a = lineal_interp(t0, t1, va0, va1, t); // calculo de la velocidad angular
-
-  /** COMPLETAR: Evaluar las velocidades lineales y angulares resultantes para publicar
-   * como comandos de velocidad. */
-  vx = v_x;
-  vy = v_y;
-  w = v_a;
-
+  double vx_map = lineal_interp(t0, t1, vx0, vx1, t);  // calculo de la velocidad lineal en X
+  double vy_map = lineal_interp(t0, t1, vy0, vy1, t); // calculo de la velocidad lineal en Y
+  double theta_interp = lineal_interp(t0, t1, theta0, theta1, t);
+  
+  //w = lineal_interp(t0, t1, va0, va1, t); // calculo de la velocidad angular
+  vx = vx_map * cos(theta_interp) + vy_map * sin(theta_interp);
+  vy = -vx_map * sin(theta_interp) + vy_map * cos(theta_interp);
+  w = lineal_interp(t0, t1, va0, va1, t);
+    
   return true;
 }
+

@@ -18,14 +18,15 @@ int main(int argc, char **argv)
   rclcpp::init(argc, argv);
   // agrego
   std::cout << "Starting trajectory generator node..." << std::endl;
-  auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10))
-                       .reliable()
-                       .durability(RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL);
+  auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
+  qos_profile.reliable();
+  qos_profile.transient_local();
 
-
+  
   auto trajectory_generator_node = rclcpp::Node::make_shared("trajectory_generator");
 
   auto trajectory_publisher = trajectory_generator_node->create_publisher<robmovil_msgs::msg::Trajectory>("/robot/trajectory", qos_profile);
+  
   // Path descripto en poses para visualizacion en RViz
   auto path_publisher = trajectory_generator_node->create_publisher<nav_msgs::msg::Path>("/ground_truth/target_path", qos_profile);
 
@@ -79,14 +80,13 @@ int main(int argc, char **argv)
 
     build_spline_trajectory(stepping, spline_waypoints, trajectory_msg, path_msg);
   }
+
   for (size_t i = 0; i < trajectory_msg.points.size(); i++)
   {
     //RCLCPP_INFO(trajectory_generator_node->get_logger(), "Path generated, x: %f, y: %f", path_msg.poses[i].pose.position.x, path_msg.poses[i].pose.position.y);
     RCLCPP_INFO(trajectory_generator_node->get_logger(), "Trajectory generated, vx: %f, vy: %f, w: %f", trajectory_msg.points[i].velocity.linear.x, trajectory_msg.points[i].velocity.linear.y, trajectory_msg.points[i].velocity.angular.z);
   }
-  // EL PATH SE VE BIEN, LA TRAJECTORIA MASO MENOS PORQUE LE DA VELOCIDAD EN Y PERO EL ROBOT ESTA ORIENTADO EN EL EJE Y
-  // LUEGO SE DISTORCIONAN LAS VELOCIDADES. 
-  // CAUSA: EL PROBLEMA ES QUE LA ORIENTACION INICIAL DE LA TRAJECTORIA NO ESTA EN EL EJE X, SINO QUE ESTA ORIENTADA EN EL EJE Y, POR LO QUE LAS VELOCIDADES EN X SE DISTORSIONAN CON LAS VELOCIDADES EN Y. PARA SOLUCIONARLO, SE DEBE ROTAR LA TRAJECTORIA INICIAL PARA QUE ESTE ORIENTADA EN EL EJE X, Y LUEGO SE APLICAN LAS VELOCIDADES CORRECTAS.
+  
   trajectory_publisher->publish(trajectory_msg);
   path_publisher->publish(path_msg);
 
@@ -168,6 +168,7 @@ void build_sin_trajectory(double stepping, double total_time, double amplitude, 
 void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &wpoints, robmovil_msgs::msg::Trajectory &trajectory_msg, nav_msgs::msg::Path &path_msg)
 {
 
+
   int n_total_points = wpoints.size();
   std::cout << n_total_points << std::endl;
 
@@ -186,50 +187,53 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
     double thetab = wpoints[n_point + 1][3];
     double v_x_a = 0;
     double v_x_b = 0;
-    double v_y_a = 1;
-    double v_y_b = 1;
+    double v_y_a = 0;
+    double v_y_b = 0;
     double w_a = 0.1;
     double w_b = 0.1;
+
+    double dtheta2 = thetab - thetaa;
+
+    std::cout << dtheta2 << " " << thetaa << " " << thetab << std::endl;
 
     // polynomial parameters
 
     double a0 = xa;
     double a1 = v_x_a;
-    double a2 = 3 * (xb - xa) / (final_time * final_time) - 2 * v_x_a / final_time - v_x_b / final_time;
-    double a3 = -2 * (xb - xa) / (final_time * final_time * final_time)  + (v_x_b - v_x_a) / (final_time * final_time);
+    double a2 = 3 * (xb - xa) / (delta_time * delta_time) - 2 * v_x_a / delta_time - v_x_b / delta_time;
+    double a3 = -2 * (xb - xa) / (delta_time * delta_time * delta_time)  + (v_x_b - v_x_a) / (delta_time * delta_time);
     double b0 = ya;
     double b1 = v_y_a;
-    double b2 = 3 * (yb - ya) / (final_time * final_time) - 2 * v_y_a / final_time - v_y_b / final_time;
-    double b3 = -2 * (yb - ya) / (final_time * final_time * final_time)  + (v_y_b - v_y_a) / (final_time * final_time);
+    double b2 = 3 * (yb - ya) / (delta_time * delta_time) - 2 * v_y_a / delta_time - v_y_b / delta_time;
+    double b3 = -2 * (yb - ya) / (delta_time * delta_time * delta_time)  + (v_y_b - v_y_a) / (delta_time * delta_time);
     double c0 = thetaa;
     double c1 = w_a;
-    double c2 = 3 * (thetab - thetaa) / (final_time * final_time) - 2 * w_a / final_time - w_b / final_time;
-    double c3 = -2 * (thetab - thetaa) / (final_time * final_time * final_time)  + (w_b - w_a) / (final_time * final_time);
+    double c2 = 3 * (thetab - thetaa) / (delta_time * delta_time) - 2 * w_a / delta_time - w_b / delta_time;
+    double c3 = -2 * (thetab - thetaa) / (delta_time * delta_time * delta_time)  + (w_b - w_a) / (delta_time * delta_time);
 
     for (double t = initial_time; t <= final_time; t = t + stepping)
     {
-      
       double t_offset = t - initial_time;
-      //std::cout << "total_time " << delta_time << std::endl;
-      //std::cout << "t " << t << std::endl;
 
-      double x = a0 + a1 * t_offset / delta_time + a2 * t_offset * t_offset / (delta_time * delta_time) + a3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
-      double y = b0 + b1 * t_offset / delta_time + b2 * t_offset * t_offset / (delta_time * delta_time) + b3 * t_offset * t_offset * t_offset / (delta_time * delta_time * delta_time);
+      double x = a0 + a1 * t_offset  + a2 * t_offset * t_offset  + a3 * t_offset * t_offset * t_offset ;
+      double y = b0 + b1 * t_offset  + b2 * t_offset * t_offset  + b3 * t_offset * t_offset * t_offset ;
 
-      //std::cout << "x " << x << std::endl;
+      double vx = a1  + 2. * a2 * t_offset  + 3. * a3 * t_offset * t_offset ;
+      double vy = b1  + 2. * b2 * t_offset  + 3. * b3 * t_offset * t_offset ;
 
-      double vx = a1 / delta_time + 2. * a2 * t_offset / (delta_time * delta_time) + 3. * a3 * t_offset * t_offset / (delta_time * delta_time * delta_time);
-      double vy = b1 / delta_time + 2. * b2 * t_offset / (delta_time * delta_time) + 3. * b3 * t_offset * t_offset / (delta_time * delta_time * delta_time);
+      //double vvx = 2. * a2  + 6. * a3 * t_offset ;
+      //double vvy = 2. * b2  + 6. * b3 * t_offset ;
 
-      //std::cout << "vx " << vx << std::endl;
+      double dtheta = thetab - thetaa;
 
-      double vvx = 2. * a2 / (delta_time * delta_time) + 6. * a3 * t_offset / (delta_time * delta_time * delta_time);
-      double vvy = 2. * b2 / (delta_time * delta_time) + 6. * b3 * t_offset / (delta_time * delta_time * delta_time);
+      while(dtheta > M_PI) dtheta -= 2*M_PI;
+      while(dtheta < -M_PI) dtheta += 2*M_PI;
 
-      // calculo del angulo en cada momento y la derivada del angulo
-      //double a = angles::normalize_angle(thetaa + (thetab - thetaa) * t_offset / delta_time);
-      double a = thetaa + (thetab - thetaa) * t_offset / delta_time;
-      double va = (thetab - thetaa) / delta_time; //angles::normalize_angle
+      double a = thetaa + dtheta * (t_offset / delta_time);
+      double va = dtheta /delta_time;
+      
+      //double a = c0 + c1 * t_offset  + c2 * t_offset * t_offset  + c3 * t_offset * t_offset * t_offset ;
+      //double va = c1  + 2. * c2 * t_offset  + 3. * c3 * t_offset * t_offset ;
 
       // se crean los waypoints de la trajectoria
       robmovil_msgs::msg::TrajectoryPoint point_msg;
@@ -270,3 +274,4 @@ void build_spline_trajectory(double stepping, std::vector<std::vector<double>> &
     }
   }
 }
+

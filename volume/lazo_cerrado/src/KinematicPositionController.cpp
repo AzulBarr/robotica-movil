@@ -12,17 +12,19 @@ KinematicPositionController::KinematicPositionController() : TrajectoryFollower(
 
   current_pos_sub_ = this->create_subscription<nav_msgs::msg::Odometry>("/robot/odometry", rclcpp::QoS(10), std::bind(&KinematicPositionController::getCurrentPoseFromOdometry, this, std::placeholders::_1));
 
-  std::string goal_selection = this->declare_parameter("goal_selection", "PURSUIT_BASED");
+  std::string goal_selection = this->declare_parameter("goal_selection", "TIME_BASED");
   fixed_goal_x_ = this->declare_parameter("fixed_goal_x", 3.0);
   fixed_goal_y_ = this->declare_parameter("fixed_goal_y", 0.0);
   fixed_goal_a_ = this->declare_parameter("fixed_goal_a", -M_PI_2);
 
-  if (goal_selection == "PURSUIT_BASED")
+  if (goal_selection == "TIME_BASED")
+    goal_selection_ = TIME_BASED;
+  else if (goal_selection == "PURSUIT_BASED")
     goal_selection_ = PURSUIT_BASED;
   else if (goal_selection == "FIXED_GOAL")
     goal_selection_ = FIXED_GOAL;
   else
-    goal_selection_ = PURSUIT_BASED; // default
+    goal_selection_ = TIME_BASED; // default
 }
 
 double lineal_interp(const rclcpp::Time &t0, const rclcpp::Time &t1, double y0, double y1, const rclcpp::Time &t)
@@ -43,49 +45,57 @@ void KinematicPositionController::getCurrentPoseFromOdometry(const nav_msgs::msg
   a = yaw;
 }
 
-/**
- * NOTA: Para un sistema estable mantener:
- * - 0 < K_RHO
- * - K_RHO < K_ALPHA
- * - K_BETA < 0
- */
+// ORIGINALES
+// #define K_RHO 1
+// #define K_ALPHA 1.5
+// #define K_BETA -0.5
 
-#define K_X 0.3
-#define K_Y 1.5
-#define K_THETA -0.3
+#define KX 1
+#define KY 1
+#define KTH 1
 
-bool KinematicPositionController::control(
-    const rclcpp::Time &t,
-    double &vx,
-    double &vy,
-    double &w)
+bool KinematicPositionController::control(const rclcpp::Time &t, double &vx, double& vy, double &w)
 {
-  // Pose actual (odometría)
-  double current_x = this->x;
-  double current_y = this->y;
-  double current_a = this->a;
+  // Se obtiene la pose actual publicada por la odometria
+  double current_x, current_y, current_a;
+  current_x = this->x;
+  current_y = this->y;
+  current_a = this->a;
 
-  // Pose objetivo
+  //RCLCPP_INFO(this->get_logger(), "cx: %.3f cy: %.3f ca: %.3f", current_x, current_y, current_a);
+
+  // Se obtiene la pose objetivo actual a seguir
   double goal_x, goal_y, goal_a;
-  if (!getCurrentGoal(t, goal_x, goal_y, goal_a))
+  if (not getCurrentGoal(t, goal_x, goal_y, goal_a))
     return false;
+  publishCurrentGoal(t, goal_x, goal_y, goal_a); // publicación de la pose objetivo para visualizar en RViz
 
-  publishCurrentGoal(t, goal_x, goal_y, goal_a);
-
-  // Error en el marco inercial
   double dx = goal_x - current_x;
   double dy = goal_y - current_y;
+  double theta = goal_a - current_a;  
 
-  // Error angular
-  double dtheta = angles::normalize_angle(goal_a - current_a);
+  while(theta > M_PI) theta -= 2*M_PI;
+  while(theta < -M_PI) theta += 2*M_PI;
 
-  // Controlador P holonómico (desacoplado)
-  vx = K_X * dx;
-  vy = K_Y * dy;
-  w  = K_THETA * dtheta;
+  //RCLCPP_INFO(this->get_logger(), "atan2: %.2f, theta siegwart: %.2f, expected_atheta: %.2f, rho: %.2f, alpha: %.2f, beta: %.2f, v: %.2f, w: %.2f",
+  //            atan2(dy, dx), theta, current_a, dx, dy, theta, dx, w);
 
-  RCLCPP_INFO(this->get_logger(), "vx: %.2f, vy: %.2f, w: %.2f", vx, vy, w);
-  
+  //RCLCPP_INFO(this->get_logger(), "goal_x: %.2f, goal_y: %.2f, goal_a: %.2f, current_x: %.2f, current_y: %.2f, current_a: %.2f",
+  //            goal_x, goal_y, goal_a, current_x, current_y, current_a);
+
+  double vx_map = KX * dx;
+  double vy_map = KY * dy;
+  w = KTH * theta;
+
+  vx = vx_map * cos(current_a) + vy_map * sin(current_a);
+  vy = -vx_map * sin(current_a) + vy_map * cos(current_a);
+
+  //vx = 0;
+  //vy = 0.5;
+  //w = 0;
+
+  //RCLCPP_WARN(this->get_logger(), "vx: %.3f vy: %.3f w: %.3f", vx, vy, w);
+
   return true;
 }
 
@@ -99,78 +109,89 @@ bool KinematicPositionController::getPursuitBasedGoal(const rclcpp::Time &t, dou
 {
   // Los obtienen los valores de la posicion y orientacion actual.
   double current_x, current_y, current_a;
-  current_x = this->x;
-  current_y = this->y;
-  current_a = this->a;
-
+  current_x = this->x; current_y = this->y; current_a = this->a;
+    
   // Se obtiene la trayectoria requerida.
-  const robmovil_msgs::msg::Trajectory &trajectory = getTrajectory();
+  const robmovil_msgs::msg::Trajectory& trajectory = getTrajectory();
 
-  /** 
-   * Se recomienda encontrar el waypoint de la trayectoria más cercano al robot en términos de x,y
-   * y luego buscar el primer waypoint que se encuentre a una distancia predefinida de lookahead en x,y */
+  double lookahead = 0.05;
 
-  /* NOTA: De esta manera les es posible recorrer la trayectoria requerida */
+  unsigned int wp_it = 0;
 
-  double lookahead = 0.5;           
-  double dist_min = pow(2.0, 63.0); 
-  int indice_punto_mas_cercano = 0;
-
-  // buscar el punto mas cercano al robot
-  for (unsigned int i = 0; i < trajectory.points.size(); i++)
+  for(unsigned int i = 0; i < trajectory.points.size(); i++)
   {
     // Recorren cada waypoint definido
-    const robmovil_msgs::msg::TrajectoryPoint &wpoint = trajectory.points[i];
-
+    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[i];
+    
     // Y de esta manera puede acceder a la informacion de la posicion y orientacion requerida en el waypoint
     double wpoint_x = wpoint.transform.translation.x;
     double wpoint_y = wpoint.transform.translation.y;
     double wpoint_a = tf2::getYaw(wpoint.transform.rotation);
-
-    double distancia = dist2(current_x, current_y, wpoint_x, wpoint_y);
-
-    if (distancia < dist_min)
-    {
-      dist_min = distancia;
-      indice_punto_mas_cercano = i;
-    }
-  }
-
-  int indice_lookahead = 0;
-  // paso 3 encontrar un punto goal que este <lookahead> delante del robot
-  // miramos desde el indice mas cercano al robot para adelante
-  for (unsigned int i = indice_punto_mas_cercano; i < trajectory.points.size(); i++)
-  {
-    // Recorren cada waypoint definido
-    const robmovil_msgs::msg::TrajectoryPoint &wpoint = trajectory.points[i];
-
-    // Y de esta manera puede acceder a la informacion de la posicion y orientacion requerida en el waypoint
-    double wpoint_x = wpoint.transform.translation.x;
-    double wpoint_y = wpoint.transform.translation.y;
-    double wpoint_a = tf2::getYaw(wpoint.transform.rotation);
-
-    double distancia = dist2(current_x, current_y, wpoint_x, wpoint_y);
-
-    if (distancia > lookahead)
-    {
-      indice_lookahead = i;
+    
+    if(dist2(current_x, current_y, wpoint_x, wpoint_y) < lookahead) {
+      wp_it = i;
       break;
     }
-    // si no hay ninguno le doy el ultimo?
-    indice_lookahead = i;
+    
   }
 
-  x = trajectory.points[indice_lookahead].transform.translation.x;
-  y = trajectory.points[indice_lookahead].transform.translation.y;
-  a = tf2::getYaw(trajectory.points[indice_lookahead].transform.rotation);
+  for(unsigned int i = wp_it; i < trajectory.points.size(); i++) {
+    const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[i];
+    if(dist2(current_x, current_y, wpoint.transform.translation.x, wpoint.transform.translation.y) > lookahead) {
+      break;
+    }
+    wp_it = i;
+  }
 
-  const robmovil_msgs::msg::TrajectoryPoint &last_wpoint = trajectory.points.back();
-  int tolerancia = 0.5;
-  if (dist2(current_x, current_y, last_wpoint.transform.translation.x, last_wpoint.transform.translation.y) < 0.5)
-  {
+  const robmovil_msgs::msg::TrajectoryPoint& wpoint = trajectory.points[wp_it];
+  x = wpoint.transform.translation.x; 
+  y = wpoint.transform.translation.y; 
+  a = tf2::getYaw(wpoint.transform.rotation);
+
+  const robmovil_msgs::msg::TrajectoryPoint& last_wpoint = trajectory.points.back(); 
+
+  RCLCPP_INFO(this->get_logger(), "cx: %.3f cy: %.3f gx: %.3f gy: %.3f cercania: %.3f", current_x, current_y, x, y,
+dist2(current_x, current_y, last_wpoint.transform.translation.x, last_wpoint.transform.translation.y));
+  
+  
+  /* retorna true si es posible definir un goal, false si se termino la trayectoria y no quedan goals. */
+  if(wp_it == trajectory.points.size() && dist2(current_x, current_y, last_wpoint.transform.translation.x, last_wpoint.transform.translation.y) < lookahead) {
     return false;
   }
-
-  /* retorna true si es posible definir un goal, false si se termino la trayectoria y no quedan goals. */
   return true;
 }
+
+bool KinematicPositionController::getTimeBasedGoal(const rclcpp::Time &t, double &x, double &y, double &a)
+{
+  size_t next_point_idx;
+
+  if (not nextPointIndex(t, next_point_idx))
+    return false;
+
+  RCLCPP_INFO(this->get_logger(), "processing index: %zu", next_point_idx);
+
+  const robmovil_msgs::msg::TrajectoryPoint &prev_point = getTrajectory().points[next_point_idx - 1];
+  const robmovil_msgs::msg::TrajectoryPoint &next_point = getTrajectory().points[next_point_idx];
+
+  const rclcpp::Time &t0 = getInitialTime() + prev_point.time_from_start;
+  const rclcpp::Time &t1 = getInitialTime() + next_point.time_from_start;
+
+  assert(t0 <= t);
+  assert(t < t1);
+
+  double x0 = prev_point.transform.translation.x;
+  double x1 = next_point.transform.translation.x;
+
+  double y0 = prev_point.transform.translation.y;
+  double y1 = next_point.transform.translation.y;
+
+  double a0 = tf2::getYaw(prev_point.transform.rotation);
+  double a1 = tf2::getYaw(next_point.transform.rotation);
+
+  x = lineal_interp(t0, t1, x0, x1, t);
+  y = lineal_interp(t0, t1, y0, y1, t);
+  a = lineal_interp(t0, t1, a0, a1, t);
+
+  return true;
+}
+

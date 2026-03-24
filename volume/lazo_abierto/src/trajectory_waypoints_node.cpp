@@ -28,7 +28,7 @@ std::vector<waypoint> planBox()
 int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
-  rclcpp::QoS qos_profile(rclcpp::KeepLast(10));
+  rclcpp::QoS qos_profile(rclcpp::KeepLast(1));
   qos_profile.reliable();
   qos_profile.transient_local();
 
@@ -75,3 +75,4 @@ int main(int argc, char** argv)
 
   return 0;
 }
+
